@@ -19,8 +19,8 @@ const DiscoverNext = () => {
 
   return (
     <div>
-      {/* Wrapper with 200vh for scroll */}
-      <section id="discover" className="relative h-[200vh] w-full">
+      {/* Wrapper with 100vh for scroll */}
+      <section id="discover" className="relative h-[100vh] w-full">
         <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
           {/* Background 1 (Black) */}
           <div
@@ -43,9 +43,9 @@ const DiscoverNext = () => {
           </div>
 
           {/* Content */}
-          <div className="relative z-10 text-center px-6">
+          <div className="relative z-10 px-4 sm:px-6 md:px-12 lg:px-20 w-full">
             <h1
-              className={`text-6xl md:text-7xl font-bold mb-6 leading-snug transition-colors duration-500 ${
+              className={`text-3xl sm:text-5xl md:text-6xl lg:text-8xl text-start max-w-[95%] md:max-w-[80%] font-bold mb-4 md:mb-6 leading-snug transition-colors duration-500 ${
                 scrolled ? "text-white" : "text-[#6C63FF]"
               }`}
             >
@@ -58,24 +58,19 @@ const DiscoverNext = () => {
                 scrolled ? "opacity-0" : "opacity-100"
               }`}
             >
-              <p className="text-base md:text-lg lg:text-xl text-white opacity-90 mb-10 leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-start max-w-[95%] md:max-w-[60%] text-white opacity-90 mb-6 md:mb-10 leading-relaxed">
                 Learn how Agentic CMS leverages AI-driven automation to
                 streamline content creation, personalization, and
                 publishing—helping you deliver smarter, faster, and more
                 engaging digital experiences.
               </p>
 
-              <button className="px-8 py-3 md:px-10 md:py-4 border border-white text-white rounded-full hover:bg-white hover:text-black transition font-medium">
+              <button className="px-6 py-2 sm:px-8 sm:py-3 md:px-10 md:py-4 border border-white text-white rounded-full hover:bg-white hover:text-black transition font-medium text-sm sm:text-base md:text-lg">
                 Read the story
               </button>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Next Section (normal content) */}
-      <section className="h-screen bg-white flex items-center justify-center">
-        <h2 className="text-4xl font-bold text-black">Next Component</h2>
       </section>
     </div>
   );

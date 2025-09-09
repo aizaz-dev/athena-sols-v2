@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
 html, body {
-  overflow-x: hidden; /* 👈 horizontal scroll kabhi na aaye */
+  overflow-x: hidden; 
+
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 190s linear infinite;
 }

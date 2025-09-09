@@ -1,3 +1,4 @@
+import Footer from "./component/Footer/Footer";
 import Navbar from "./component/Navbar";
 import "./globals.css";
 
@@ -16,10 +17,8 @@ export default function RootLayout({ children }) {
         {/* Main content */}
         <main className="flex-1">{children}</main>
 
-        {/* Optional footer */}
-        <footer className="bg-black text-white text-center py-4 text-sm">
-          © {new Date().getFullYear()} CMS Clone. All rights reserved.
-        </footer>
+        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );
