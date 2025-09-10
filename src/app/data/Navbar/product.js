@@ -9,7 +9,7 @@ const productMenu = {
     {
       section: "The platform",
       items: [
-        { label: "The platform", href: "/platform", icon: <FaBox /> },
+        { label: "The platform", href: "/product", icon: <FaBox /> },
         { label: "Mission Control", href: "/mission-control", icon: <FaChartBar /> },
         { label: "AI accelerators", href: "/ai-accelerators", icon: <FaRobot /> },
         { label: "Features", href: "/features", icon: <FaStar /> },

@@ -6,11 +6,12 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white px-6 md:px-16 py-12">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
+    <footer className="bg-black text-white px-4 sm:px-6 md:px-12 lg:px-16 py-10 sm:py-12">
+      {/* Top Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 border-b border-gray-700 pb-8 sm:pb-10">
         <div>
           <h4 className="font-semibold mb-4 text-lg">Product</h4>
-          <ul className="space-y-2 text-base text-gray-300 break-words">
+          <ul className="space-y-2 text-sm sm:text-base text-gray-300 break-words">
             <li>What’s new</li>
             <li>Solutions</li>
             <li>Integrations</li>
@@ -23,7 +24,7 @@ export default function Footer() {
 
         <div>
           <h4 className="font-semibold mb-4 text-lg">Resources & Help</h4>
-          <ul className="space-y-2 text-base text-gray-300 break-words">
+          <ul className="space-y-2 text-sm sm:text-base text-gray-300 break-words">
             <li>Learn Kontent.ai</li>
             <li>Headless CMS guide</li>
             <li>Resource library</li>
@@ -36,7 +37,7 @@ export default function Footer() {
 
         <div>
           <h4 className="font-semibold mb-4 text-lg">Company</h4>
-          <ul className="space-y-2 text-base text-gray-300 break-words">
+          <ul className="space-y-2 text-sm sm:text-base text-gray-300 break-words">
             <li>About us</li>
             <li>Contact</li>
             <li>Brand book</li>
@@ -50,13 +51,13 @@ export default function Footer() {
 
         <div>
           <h4 className="font-semibold mb-4 text-lg">Partners</h4>
-          <ul className="space-y-2 text-base text-gray-300 break-words">
+          <ul className="space-y-2 text-sm sm:text-base text-gray-300 break-words">
             <li>Find a partner</li>
             <li>Become a partner</li>
             <li>Partner login</li>
             <li>Partner lead registration form</li>
           </ul>
-          <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6 text-2xl">
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6 text-xl sm:text-2xl">
             <FaFacebookF />
             <FaLinkedinIn />
             <FaYoutube />
@@ -69,18 +70,22 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex justify-center overflow-hidden">
+      {/* Middle Big Logo */}
+      <div className="flex justify-center overflow-hidden mt-10 sm:mt-12">
         <span
-          className="bg-clip-text text-6xl sm:text-8xl md:text-[10rem] lg:text-[12rem] 
-                     font-bold text-transparent bg-[url('/Footer/Logo.webp')] bg-cover bg-center"
+          className="bg-clip-text text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] 
+                     font-bold text-transparent bg-[url('/Footer/Logo.webp')] bg-cover bg-center text-center"
         >
           KONTENT.AI
         </span>
       </div>
 
-      <div className="mt-12 border-t border-gray-700 pt-6 text-base flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400">
-        <span className="text-center md:text-left">Copyright © 2025 Kontent.ai</span>
-        <div className="flex flex-wrap justify-center md:justify-end gap-4">
+      {/* Bottom Row */}
+      <div className="mt-10 sm:mt-12 border-t border-gray-700 pt-6 text-sm sm:text-base flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400">
+        <span className="text-center md:text-left">
+          Copyright © 2025 Kontent.ai
+        </span>
+        <div className="flex flex-wrap justify-center md:justify-end gap-3 sm:gap-4">
           <a href="#">Privacy policy</a>
           <a href="#">Cookies policy</a>
           <a href="#">Consent settings</a>

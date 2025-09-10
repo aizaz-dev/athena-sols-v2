@@ -4,10 +4,10 @@ import CustomerStories from "../CustomerStories/CustomerStories";
 import DiscoverNext from "../DiscoverNext/DiscoverNext";
 import FutureProof from "../FutureProof/FutureProof";
 import HeroSection from "../HeroSection/HeroSection";
-import CardInfo from "../FutureProof/Infocard/Cardsinfo";
+import CardInfo from "../Infocard/Cardsinfo";
 import LogoMarquee from "../LogoMarquee/LogoMarque";
-import MissionControl from "../FutureProof/MissionControl/MissionControl";
-import SecuritySection from "../FutureProof/SecurityCards/SecurityCards";
+import MissionControl from "../MissionControl/MissionControl";
+import SecuritySection from "../SecurityCards/SecurityCards";
 
 function HomePage() {
   return (

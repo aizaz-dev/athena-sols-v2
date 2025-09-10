@@ -46,9 +46,7 @@ export default function Navbar() {
         <button aria-label="search">
           <Search size={18} />
         </button>
-        <Link href="/login" className="text-sm">
-          Login
-        </Link>
+       
         <Link
           href="/fit"
           className="bg-indigo-500 hover:bg-indigo-600 px-4 sm:px-5 py-2 rounded-full text-sm hidden lg:inline-block"
