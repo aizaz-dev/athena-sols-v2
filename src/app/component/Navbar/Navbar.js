@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Search, Menu, X } from "lucide-react";
 import { useState } from "react";
 import navItems from "../../data/Navbar";
-import DropdownMenu from "../Home/DropDownMenu/DropdownMenu";
+import DropdownMenu from "./DropDownMenu/DropdownMenu";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -24,6 +24,7 @@ export default function Navbar() {
               </button>
               <div className="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200">
                 <DropdownMenu
+                
                   links={item.links}
                   promo={item.promo}
                   align={i >= navItems.length - 2 ? "right" : "left"}

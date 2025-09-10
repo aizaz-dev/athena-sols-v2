@@ -17,21 +17,21 @@ export default function DropdownMenu({ links, promo, isMobile = false, align = "
           <div className="flex-1 grid grid-cols-2 gap-8">
             {links.map((col, i) => (
               <div key={i}>
-                <h3 className="text-sm uppercase tracking-wide mb-4 border-b border-gray-700 pb-2">
+                <h3 className="text-[13px] uppercase tracking-wide mb-4 border-b border-gray-700 pb-2">
                   {col.title}
                 </h3>
-                <ul className="space-y-4 text-sm">
+                <ul className="space-y-3 text-[15px]">
                   {col.items.map((item, j) => (
                     <li key={j}>
                       <Link
                         href={item.href}
-                        className="hover:text-indigo-400 flex items-start gap-2"
+                        className="hover:text-indigo-400 flex items-start gap-2 py-1.5"
                       >
                         {item.icon && <span>{item.icon}</span>}
                         <span>
                           <span className="block font-medium">{item.label}</span>
                           {item.desc && (
-                            <span className="text-xs text-gray-400">{item.desc}</span>
+                            <span className="text-[13px] text-gray-400">{item.desc}</span>
                           )}
                         </span>
                       </Link>
@@ -67,21 +67,21 @@ export default function DropdownMenu({ links, promo, isMobile = false, align = "
         <div className="flex flex-col gap-6 bg-[#111] text-white rounded-xl p-4 mt-3">
           {links.map((col, i) => (
             <div key={i}>
-              <h3 className="text-sm uppercase tracking-wide mb-3 border-b border-gray-700 pb-2">
+              <h3 className="text-[13px] uppercase tracking-wide mb-3 border-b border-gray-700 pb-2">
                 {col.title}
               </h3>
-              <ul className="space-y-3 text-sm">
+              <ul className="space-y-2 text-[15px]">
                 {col.items.map((item, j) => (
                   <li key={j}>
                     <Link
                       href={item.href}
-                      className="hover:text-indigo-400 flex items-start gap-2"
+                      className="hover:text-indigo-400 flex items-start gap-2 py-1.5"
                     >
                       {item.icon && <span>{item.icon}</span>}
                       <span>
                         <span className="block font-medium">{item.label}</span>
                         {item.desc && (
-                          <span className="text-xs text-gray-400">{item.desc}</span>
+                          <span className="text-[13px] text-gray-400">{item.desc}</span>
                         )}
                       </span>
                     </Link>
