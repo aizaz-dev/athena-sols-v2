@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
         <div>
           <h4 className="font-semibold mb-4 text-lg">Product</h4>
-          <ul className="space-y-2 text-base text-gray-300">
+          <ul className="space-y-2 text-base text-gray-300 break-words">
             <li>What’s new</li>
             <li>Solutions</li>
             <li>Integrations</li>
@@ -23,7 +23,7 @@ export default function Footer() {
 
         <div>
           <h4 className="font-semibold mb-4 text-lg">Resources & Help</h4>
-          <ul className="space-y-2 text-base text-gray-300">
+          <ul className="space-y-2 text-base text-gray-300 break-words">
             <li>Learn Kontent.ai</li>
             <li>Headless CMS guide</li>
             <li>Resource library</li>
@@ -36,7 +36,7 @@ export default function Footer() {
 
         <div>
           <h4 className="font-semibold mb-4 text-lg">Company</h4>
-          <ul className="space-y-2 text-base text-gray-300">
+          <ul className="space-y-2 text-base text-gray-300 break-words">
             <li>About us</li>
             <li>Contact</li>
             <li>Brand book</li>
@@ -50,13 +50,13 @@ export default function Footer() {
 
         <div>
           <h4 className="font-semibold mb-4 text-lg">Partners</h4>
-          <ul className="space-y-2 text-base text-gray-300">
+          <ul className="space-y-2 text-base text-gray-300 break-words">
             <li>Find a partner</li>
             <li>Become a partner</li>
             <li>Partner login</li>
             <li>Partner lead registration form</li>
           </ul>
-          <div className="flex flex-wrap gap-4 mt-6 text-2xl">
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6 text-2xl">
             <FaFacebookF />
             <FaLinkedinIn />
             <FaYoutube />
@@ -69,10 +69,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex justify-center ">
+      <div className="flex justify-center overflow-hidden">
         <span
-          className="bg-clip-text text-[12rem] font-bold text-transparent 
-                     bg-[url('/Footer/Logo.webp')] bg-cover bg-center"
+          className="bg-clip-text text-6xl sm:text-8xl md:text-[10rem] lg:text-[12rem] 
+                     font-bold text-transparent bg-[url('/Footer/Logo.webp')] bg-cover bg-center"
         >
           KONTENT.AI
         </span>

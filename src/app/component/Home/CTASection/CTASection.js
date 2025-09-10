@@ -7,7 +7,7 @@ export default function CTASection() {
       {/* Left Side */}
       <div className="bg-[#5F4BFF] text-white flex flex-col justify-center px-6 sm:px-8 md:px-16 py-12 sm:py-20">
         <div className="sm:pl-8 md:pl-16 lg:pl-24">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Get started with <br className="hidden sm:block" /> the CMS built to{" "}
             <br className="hidden sm:block" /> scale: Kontent.ai
           </h2>

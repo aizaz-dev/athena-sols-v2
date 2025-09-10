@@ -2,7 +2,7 @@
 "use client";
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import logoData from '../data/LogoData/logoData';
+import logoData from '../../../data/LogoData/logoData';
 
 const LogoMarquee = () => {
   const marqueeRef = useRef(null);

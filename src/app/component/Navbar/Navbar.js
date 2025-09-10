@@ -2,8 +2,8 @@
 import Link from "next/link";
 import { Search, Menu, X } from "lucide-react";
 import { useState } from "react";
-import navItems from "../data/nav";
-import DropdownMenu from "./DropdownMenu";
+import navItems from "../../data/Navbar";
+import DropdownMenu from "../Home/DropDownMenu/DropdownMenu";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function Navbar() {
           item.links ? (
             <li key={i} className="relative group">
               <button className="hover:text-indigo-400 flex items-center gap-1">
-                {item.label} ▾
+                {item.label} ▾ {item.icon}
               </button>
               <div className="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200">
                 <DropdownMenu

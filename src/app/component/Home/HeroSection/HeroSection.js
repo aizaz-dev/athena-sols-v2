@@ -36,9 +36,9 @@ export default function HeroSection() {
         <div className="mt-12 flex flex-col sm:flex-row items-center gap-6">
           <Link
             href="#"
-            className="px-10 py-4 rounded-full bg-white text-black font-semibold 
-                       text-lg shadow hover:shadow-lg transition 
-                       w-full sm:w-auto text-center"
+            className="px-10 py-4 rounded-full border border-white text-white 
+                       font-semibold text-lg hover:bg-white hover:text-black 
+                       transition w-full sm:w-auto text-center"
           >
             See if we’re a fit
           </Link>
