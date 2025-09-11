@@ -7,6 +7,8 @@ import EasilyWork from "@/app/component/Product/MissionControl/EasilyWork/Easily
 import Tabs from "@/app/component/Product/MissionControl/Tabs/Tabs"
 import Centralized from "@/app/component/Product/MissionControl/Centralized/Centralized"
 import ContentProduction from "@/app/component/Product/MissionControl/ContentProduction/ContentProduction"
+import Testimonial from "@/app/component/Product/MissionControl/TestimonialSection/TestimonialSection"
+import Resources from "@/app/component/Product/MissionControl/Resources/Resources"
 export default function MissionController(){
     return(
         <>
@@ -19,6 +21,8 @@ export default function MissionController(){
             <Tabs />
             <Centralized />
             <ContentProduction />
+            <Testimonial />
+            <Resources />
         </>
     )
 }

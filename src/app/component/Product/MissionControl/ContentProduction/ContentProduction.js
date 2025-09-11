@@ -5,19 +5,19 @@ import Image from "next/image";
 export default function ContentProduction() {
   const items = [
     {
-      img: "https://i.ibb.co/0yGsXBL/calendar-ui.png",
+      img: "/Product/MissionController/Taskcard1.webp",
       title: "Transparent content planning",
       desc: "Stop bouncing between different calendars, drafts, and systems. Take content from planning to publishing without leaving the Kontent.ai platform.",
       btn: "Learn more",
     },
     {
-      img: "https://i.ibb.co/5M9Y9Ls/ai-editor-ui.png",
+      img: "/Product/MissionController/Taskcard2.webp",
       title: "AI assistance at your fingertips",
       desc: "Get from first draft to go-live faster with AI. Generate copy variants, sense check voice and tone, and spin up new image descriptions, localized versions, and more.",
       btn: "Learn more",
     },
     {
-      img: "https://i.ibb.co/Ph5GdrN/workflow-ui.png",
+      img: "/Product/MissionController/Taskcard3.webp",
       title: "Governance built into every action",
       desc: "Deliver consistent content across the board. Make use of user roles, permissions, and workflows to meet stringent compliance standards and mitigate risk.",
       btn: "Learn more",
@@ -40,8 +40,13 @@ export default function ContentProduction() {
             className="bg-[#1A1A1A] rounded-lg overflow-hidden shadow hover:shadow-lg transition flex flex-col"
           >
             {/* Image */}
-            <div className="relative w-full h-40  bg-blue-700">
-              
+            <div className="relative w-full h-40  ">
+              <Image
+                src={item.img}
+                alt="Content Production"
+                fill
+                className="object-cover"
+              />
             </div>
 
             {/* Content (text + button) */}
