@@ -30,7 +30,8 @@ export default function FutureProof() {
               <div className="relative w-24 h-10 sm:w-32 sm:h-12 md:w-40 md:h-14">
                 <Image
                   src={logo.src || `/placeholder.svg?text=${logo.name}`}
-                  alt={logo.altText}
+                  alt='placeholdersvg'
+
                   fill
                   className="object-contain"
                   sizes="(max-width: 640px) 96px, (max-width: 768px) 128px, (max-width: 1024px) 160px, 200px"

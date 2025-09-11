@@ -63,7 +63,7 @@ export default function UniquePowerfull() {
             >
               <Image
                 src={logo.src || `/placeholder.svg?text=${logo.name}`}
-                alt={logo.altText}
+                alt='placeholdersvg'
                 width={160}
                 height={56}
                 className="object-contain"

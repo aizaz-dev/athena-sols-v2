@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black text-white px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between flex-wrap z-50 shadow-md">
       {/* Logo */}
-      <div className="text-xl sm:text-2xl font-bold">KONTENT.AI</div>
+      <Link href='/' className="text-xl sm:text-2xl font-bold">KONTENT.AI</Link>
 
       {/* Desktop Navigation */}
       <ul className="hidden lg:flex items-center gap-6 xl:gap-8 text-sm relative">
