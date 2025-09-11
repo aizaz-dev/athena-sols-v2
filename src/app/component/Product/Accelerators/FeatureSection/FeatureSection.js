@@ -72,7 +72,7 @@ export default function FeatureSection() {
 
               {/* Button center */}
               <div className="flex justify-center">
-                <button className="px-19 py-6 border border-gray-400 rounded-full hover:bg-white hover:text-black transition">
+                <button className="px-19 py-3 border border-gray-400 rounded-full hover:bg-white hover:text-black transition">
                   {feature.buttonText || "Learn more"}
                 </button>
               </div>
