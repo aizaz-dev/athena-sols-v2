@@ -66,7 +66,7 @@ const slides = [
 
 
 
-export default function ContentSlider() {
+export default function WhatsContentSlider() {
   const [current, setCurrent] = useState(0);
 
   const prevSlide = () => {

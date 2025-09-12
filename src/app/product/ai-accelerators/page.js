@@ -2,8 +2,9 @@ import StrengthenContent from '@/app/component/Product/Accelerators/ContentStren
 import FeatureSection from '@/app/component/Product/Accelerators/FeatureSection/FeatureSection'
 import HeroAccelertor from '@/app/component/Product/Accelerators/HeroAccelerator/HeroAccelerator'
 import ResponsibleAI from '@/app/component/Product/Accelerators/ResponsibleAi/ResponsibleAi'
-import StartCreating from '@/app/component/Product/Accelerators/StartCreatingAi/StartCreatingAi'
+import CustomHeading from '@/app/component/Same/CustomHeading/CustomHeading'
 import TestimonialSlider from '@/app/component/Same/TestimonialSlider/TestimonialSlider'
+import { extSectionData } from '@/app/data/CustomHeading/CustomHeadingData'
 import testimonials from '@/app/data/Testimonial/Accelerator/testimonials'
 import React from 'react'
 
@@ -15,7 +16,7 @@ const Accelerator = () => {
       <FeatureSection />
       <ResponsibleAI />
       <TestimonialSlider data={testimonials}/>
-      <StartCreating />
+      <CustomHeading   {...extSectionData} />
     </>
   )
 }

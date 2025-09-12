@@ -8,7 +8,8 @@ import MissionControl from '../../component/Home/MissionControl/MissionControl'
 import FlexibilitySection from '../../component/Product/platform/FlexibilitySection/FlexibilitySection'
 import SuccessStories from '../../component/Product/platform/SuccessStories/SuccessStories'
 import UniquePowerfull from '../../component/Product/platform/UniquePowerfull/UniquePowerfull'
-import EXTSection from '../../component/Product/platform/EXTSection/EXTSection'
+import CustomHeading from '@/app/component/Same/CustomHeading/CustomHeading'
+import { extSectionData } from '@/app/data/CustomHeading/CustomHeadingData'
 
 const ThePlatForm = () => {
   return (
@@ -22,7 +23,7 @@ const ThePlatForm = () => {
       <FlexibilitySection />
       <SuccessStories />
       <UniquePowerfull />
-      <EXTSection />
+      <CustomHeading {...extSectionData} />
 
     </>
   )

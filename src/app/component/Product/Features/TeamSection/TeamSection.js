@@ -27,35 +27,38 @@ const teamCards = [
 
 export default function TeamSection() {
   return (
-    <section className="bg-[#1a1a1a] text-white px-6 md:px-12 lg:px-24 py-16">
+    <section className="bg-[#1a1a1a] text-white px-4 sm:px-6 md:px-20 lg:px-50 py-12 sm:py-16 ">
       {/* Top Content */}
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug">
+      <div className="text-left">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug">
           Designed for your{" "}
           <span className="text-[#6C63FF]">entire digital team</span>
         </h2>
-        <p className="text-gray-300 mt-4 text-base md:text-lg">
-          Content authors, designers, and developers have everything they need to
-          create and distribute content more quickly, more safely, and more flexibly. <br />
+        <p className="text-gray-300 mt-4 text-sm sm:text-base md:text-lg">
+          Content authors, designers, and developers have everything they need
+          to create and distribute content more quickly, more safely, and more
+          flexibly. <br className="hidden sm:block" />
           See what organizations can do with Kontent.ai.
         </p>
       </div>
 
       {/* Cards Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16">
         {teamCards.map((card, index) => (
           <div
             key={index}
-            className="flex flex-col justify-between bg-[#222] rounded-2xl p-6 h-[400px] md:h-[450px] "
+            className="flex flex-col justify-between bg-[#222] rounded-2xl p-6 h-auto min-h-[350px] sm:min-h-[400px] md:min-h-[450px] transition hover:shadow-lg"
           >
             <div>
               {card.icon}
-              <h3 className="text-2xl font-semibold leading-snug">{card.title}</h3>
-              <p className="text-gray-300 mt-3 text-base leading-relaxed">
+              <h3 className="text-xl sm:text-2xl font-semibold leading-snug">
+                {card.title}
+              </h3>
+              <p className="text-gray-300 mt-3 text-sm sm:text-base leading-relaxed">
                 {card.description}
               </p>
             </div>
-            <button className="mt-6 border border-gray-400 rounded-full px-6 py-2 hover:bg-white hover:text-black transition self-start">
+            <button className="mt-6 border border-gray-400 rounded-full px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-white hover:text-black transition self-start">
               {card.buttonText}
             </button>
           </div>

@@ -8,9 +8,9 @@ import { FiChevronRight } from "react-icons/fi";
 const ContentManagement = () => {
   // Images for each row (replace with actual assets in /public/images/)
   const images = [
-    "/images/governance.png",
-    "/images/visibility.png",
-    "/images/ai-assistance.png",
+    "/Features/Workflow.webp",
+    "/Features/2.webp",
+    "/Features/3.webp",
   ];
 
   // Content items
@@ -81,10 +81,10 @@ const ContentManagement = () => {
 
         {/* Right column: Image */}
         <div className="flex justify-center">
-          <div className="relative w-full max-w-[500px] h-[320px] md:h-[400px]">
+          <div className="relative w-full max-w-[600px] h-[320px] md:h-[400px]">
             <Image
               src={images[activeIndex]}
-              alt="Workflow step"
+              alt="step"
               fill
               className="rounded-2xl object-cover shadow-xl transition-all duration-500"
             />
