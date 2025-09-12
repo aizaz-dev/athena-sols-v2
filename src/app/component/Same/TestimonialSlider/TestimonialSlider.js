@@ -39,7 +39,7 @@ export default function TestimonialSlider({ data }) {
             />
           </div>
           <div className="flex flex-col">
-            <span className="text-4xl text-blue-400 mb-4">“</span>
+            <span className="text-7xl text-blue-400 mb-4">“</span>
             <p className="text-lg md:text-xl leading-relaxed">{testimonial.text}</p>
             <div className="mt-6">
               <p className="font-semibold">{testimonial.name}</p>

@@ -1,29 +1,35 @@
 "use client";
 import React from "react";
 
-const MissionControl = () => {
+const MissionControl = ({ data }) => {
+  const { title, highlight, description, buttonText, image, reverse = false } =
+    data;
+
   return (
-    <section className="bg-black text-white py-16 px-6 flex flex-col lg:flex-row items-center justify-center gap-10">
+    <section
+      className={`bg-black text-white py-16 px-6 flex flex-col ${
+        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+      } items-center justify-center gap-10`}
+    >
       {/* Left Side - Text */}
       <div className="w-full max-w-2xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Mission Control:
+          {title}{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
-            Your Home base
+            {highlight}
           </span>
         </h2>
-        <p className="text-lg text-gray-200 mb-6">
-         Start the day in Mission Control, where you can monitor everything that is happening across your content, teams, and operations. With consolidated insights, it’s much easier to take the right action to improve how your teams work and accelerate content production. </p>
+        <p className="text-lg text-gray-200 mb-6">{description}</p>
         <button className="px-6 py-3 bg-transparent border-2 border-white rounded-full text-white hover:bg-white hover:text-black transition">
-          Learn More
+          {buttonText}
         </button>
       </div>
 
-      {/* Right Side - Image Preview */}
+      {/* Right Side - Image */}
       <div className="w-full max-w-2xl rounded-xl overflow-hidden shadow-lg">
         <img
-          src="/product/extsection.webp"
-          alt="Content Governance"
+          src={image}
+          alt={highlight}
           className="w-full h-full object-cover rounded-xl"
         />
       </div>
