@@ -14,7 +14,7 @@ const productMenu = {
         { label: "AI accelerators", href: "/product/ai-accelerators", icon: <FaRobot /> },
         { label: "Features", href: "/product/features", icon: <FaStar /> },
         { label: "What’s new", href: "/product/whats-new", icon: <FaGift /> },
-        { label: "Innovation Lab", href: "/product/innovation-lab", icon: <FaFlask /> },
+        { label: "Innovation Lab", href: "/product/innovation", icon: <FaFlask /> },
         { label: "Integrations", href: "/product/integrations", icon: <FaFolder /> },
       ],
     },

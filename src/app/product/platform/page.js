@@ -1,5 +1,4 @@
 import React from 'react'
-import ControlEfficency from '../../component/Product/platform/contorl-efficency/ControlEfficency'
 import ContentGovernance from '../../component/Product/platform/ContentGovernance/ContentGovernance'
 import ContentManagement from '../../component/Product/platform/ContentManagement/ContentManagement'
 import MissionControl from '../../component/Home/MissionControl/MissionControl'
@@ -12,6 +11,8 @@ import ContentSlider from '@/app/component/Same/ContentSlider/ContentSlider'
 import { PlatformSlider } from '@/app/data/ContentSlider/ContentSliderData'
 import Hero from '@/app/component/Same/Hero/Hero'
 import { platformHeroData } from '@/app/data/HeroComponentData/HeroComponentData'
+import VideoSection from '@/app/component/Same/Video/VideoSection'
+import { ControlEfficiencyVideo } from '@/app/data/VideoSectionData/videoSection'
 
 const ThePlatForm = () => {
   return (
@@ -20,7 +21,7 @@ const ThePlatForm = () => {
       <ContentSlider slides={PlatformSlider}
       pageTitle="Create and publish content"
       pageHighlight="faster"/>
-      <ControlEfficency />
+      <VideoSection {...ControlEfficiencyVideo} />
       <ContentGovernance />
       <ContentManagement />
       <MissionControl />

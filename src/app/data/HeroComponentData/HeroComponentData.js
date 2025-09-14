@@ -54,4 +54,15 @@ export const platformHeroData = [
       { text: "Start free Trial", link: "/" },
     ],
   },
+   {
+    id: "Innvotion",
+    heading: "Explore the",
+    highlight: "Innovation Lab",
+    description:
+      "Get an exclusive first look at the latest advances in content management. Try out innovative new features before they’re available to the public, and help shape their development.",
+    buttons: [
+      { text: "See if we’re a fit", link: "/" },
+      { text: "Start free Trial", link: "/" },
+    ],
+  },
 ];

@@ -18,9 +18,6 @@ const MoniterOperation = () => {
           complete control over their content: who can work with it, how it
           moves through workflows, where it’s published, and more.
         </p>
-        <button className="px-6 py-3 bg-transparent border-2 border-white rounded-full text-white hover:bg-white hover:text-black transition">
-          Learn More
-        </button>
       </div>
 
       {/* Right Side - Image Preview */}

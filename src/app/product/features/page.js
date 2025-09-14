@@ -5,12 +5,12 @@ import KeepContent from '@/app/component/Product/Features/KeepContent/KeepConten
 import Planning from '@/app/component/Product/Features/Planning/Planning'
 import TeamSection from '@/app/component/Product/Features/TeamSection/TeamSection'
 import Hero from '@/app/component/Same/Hero/Hero'
-import MissionControl from '@/app/component/Same/MissionControl/MissionControl'
 import TestimonialSlider from '@/app/component/Same/TestimonialSlider/TestimonialSlider'
 import { platformHeroData } from '@/app/data/HeroComponentData/HeroComponentData'
-import { missionControlfeature } from '@/app/data/MissionControl/featureData'
 import FeaturesSlider from '@/app/data/Testimonial/Features/FeatureSlider'
 import React from 'react'
+import { features } from '@/app/data/ImageRightSection/imageRightSection';
+import ImageRightSection from '@/app/component/Same/ImageRightSection/ImageRightSection'
 
 const Features = () => {
   return (
@@ -22,7 +22,7 @@ const Features = () => {
         <KeepContent />
         <TeamSection />
         <BestOBread />
-        <MissionControl data={missionControlfeature} />
+        <ImageRightSection {...features} />
         <ExploreMore />
         
     </>

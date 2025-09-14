@@ -1,17 +1,21 @@
 "use client";
 import React from "react";
 
-const MissionControl = ({ data }) => {
-  const { title, highlight, description, buttonText, image, reverse = false } =
-    data;
-
+const ImageRightSection = ({
+  title,
+  highlight,
+  description,
+  buttonText,
+  image,
+  reverse = false,
+}) => {
   return (
     <section
-      className={`bg-black text-white py-16 px-6 flex flex-col ${
-        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-      } items-center justify-center gap-10`}
+      className={`bg-black text-white py-16 px-6 flex flex-col lg:flex-row items-center justify-center gap-10 ${
+        reverse ? "lg:flex-row-reverse" : ""
+      }`}
     >
-      {/* Left Side - Text */}
+      {/* Text Side */}
       <div className="w-full max-w-2xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           {title}{" "}
@@ -20,12 +24,15 @@ const MissionControl = ({ data }) => {
           </span>
         </h2>
         <p className="text-lg text-gray-200 mb-6">{description}</p>
-        <button className="px-6 py-3 bg-transparent border-2 border-white rounded-full text-white hover:bg-white hover:text-black transition">
-          {buttonText}
-        </button>
+
+        {buttonText && (
+          <button className="px-14 py-3 border rounded-full text-white font-medium hover:bg-white   shadow-md hover:text-black transition">
+            {buttonText}
+          </button>
+        )}
       </div>
 
-      {/* Right Side - Image */}
+      {/* Image Side */}
       <div className="w-full max-w-2xl rounded-xl overflow-hidden shadow-lg">
         <img
           src={image}
@@ -37,4 +44,4 @@ const MissionControl = ({ data }) => {
   );
 };
 
-export default MissionControl;
+export default ImageRightSection;
