@@ -65,4 +65,15 @@ export const platformHeroData = [
       { text: "Start free Trial", link: "/" },
     ],
   },
+   {
+    id: "Integrate",
+    heading: "Integrate with",
+    highlight: "confidence and speed",
+    description:
+      "Explore how Kontent.ai’s technology partners and proven integrations can help you design and deliver engaging digital experiences for your audiences. No feature bloat, no compromise, simply best-of-breed.",
+    buttons: [
+      { text: "See if we’re a fit", link: "/" },
+      { text: "Start free Trial", link: "/" },
+    ],
+  },
 ];

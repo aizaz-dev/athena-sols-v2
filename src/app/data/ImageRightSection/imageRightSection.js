@@ -70,3 +70,20 @@ export const shapeTheFuture  = {
   image: "/product/extsection.webp",
 }
 
+export const Integration = {
+  title: "Mission Control:",
+  highlight: "Your Home Base",
+  description:
+    "Start the day in Mission Control, where you can monitor everything that is happening across your content, teams, and operations. With consolidated insights, it’s much easier to take the right action to improve how your teams work and accelerate content production.",
+  buttonText: "Learn More",
+  image: "/product/extsection.webp",
+  reverse:true
+};
+export const Explore = {
+  title: "Explore the",
+  highlight: "integrations",
+  description:
+  "See the integrations available for Kontent.ai and find out more about what’s possible. Don’t see an integration you would like to have? Get in touch with us to discuss your needs.",
+  image: "/product/extsection.webp",
+  buttonText: "Learn More",
+};
