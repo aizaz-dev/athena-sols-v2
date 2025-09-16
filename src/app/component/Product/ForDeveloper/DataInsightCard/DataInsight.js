@@ -4,7 +4,7 @@ import { FiBarChart2 } from "react-icons/fi";
 import { TbArrowsShuffle } from "react-icons/tb";
 import { LuGem } from "react-icons/lu";
 
-export default function DataInsightsIntegration() {
+export default function DataInsightdeveloper() {
   const items = [
     {
       icon: <FiBarChart2 className="text-3xl text-white" />,
@@ -24,10 +24,10 @@ export default function DataInsightsIntegration() {
   ];
 
   return (
-    <section className="bg-black text-white py-20 px-12">
+    <section className="bg-black text-white  px-12">
     
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1400px] mx-auto">
         {items.map((item, idx) => (
           <div
             key={idx}

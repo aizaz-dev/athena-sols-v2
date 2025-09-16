@@ -1,6 +1,5 @@
 import AccelerateTV from '@/app/component/Product/Whatsnew/AccelearteTv/AccelearteTv'
 import AgenticCms from '@/app/component/Product/Whatsnew/AgenticCmsSection/AgenticCmsSection'
-import Testimonial from '@/app/component/Product/Whatsnew/Testimonial/Testimonial'
 import Updates from '@/app/component/Product/Whatsnew/Updates/Updates'
 import Whatstv from '@/app/component/Product/Whatsnew/WhatsTv/WhatsTv'
 import CustomHeading from '@/app/component/Same/CustomHeading/CustomHeading'
@@ -12,6 +11,8 @@ import Hero from '@/app/component/Same/Hero/Hero'
 import { platformHeroData } from '@/app/data/HeroComponentData/HeroComponentData'
 import ImageRightSection from '@/app/component/Same/ImageRightSection/ImageRightSection'
 import { ContentSection } from '@/app/data/ImageRightSection/imageRightSection'
+import TestimonialSlider from '@/app/component/Same/TestimonialSlider/TestimonialSlider'
+import testimonials from '@/app/data/Testimonial/Accelerator/testimonials'
 
 const whatsNew = () => {
   return (
@@ -24,7 +25,7 @@ const whatsNew = () => {
         <AccelerateTV />
         <AgenticCms />
         <Updates />
-        <Testimonial />
+        <TestimonialSlider data={testimonials} />
         <CustomHeading {...extSectionData} />
         
         

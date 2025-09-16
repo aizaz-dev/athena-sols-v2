@@ -17,44 +17,48 @@ export default function TestimonialSlider({ data }) {
   const testimonial = data[current];
 
   return (
-    <div className="bg-black text-white flex items-center justify-center min-h-[400px] py-20 px-6">
-      <div className="flex items-center max-w-5xl w-full">
+    <div className="bg-black text-white flex items-center justify-center min-h-[550px] py-20 px-6">
+      <div className="flex items-center max-w-[1500px] w-full">
         {/* Prev */}
         <button
           onClick={prevSlide}
-          className="text-white rounded-full border border-white p-3 hover:bg-white hover:text-black transition"
+          className="text-white rounded-full border border-white p-5 hover:bg-white hover:text-black transition text-2xl"
         >
           <FaChevronLeft />
         </button>
 
         {/* Content */}
-        <div className="flex flex-col md:flex-row items-center gap-8 w-full px-6">
+        <div className="flex flex-col md:flex-row items-center gap-12 w-full px-6">
           <div className="flex-shrink-0">
             <Image
               src={testimonial.image}
               alt={testimonial.name}
-              width={200}
-              height={200}
-              className="rounded-xl object-cover"
+              width={300}   
+              height={300}
+              className="rounded-2xl object-cover"
             />
           </div>
-          <div className="flex flex-col">
-            <span className="text-7xl text-blue-400 mb-4">“</span>
-            <p className="text-lg md:text-xl leading-relaxed">{testimonial.text}</p>
-            <div className="mt-6">
-              <p className="font-semibold">{testimonial.name}</p>
-              <p className="text-sm text-gray-400">
+
+          <div className="flex flex-col max-w-3xl">
+            <p className="text-2xl md:text-3xl ">
+            <span className="text-6xl text-blue-400 ">“</span>{testimonial.text}
+            </p>
+            <div className="mt-8">
+              <p className="font-semibold text-xl md:text-2xl">
+                {testimonial.name}
+              </p>
+              <p className="text-lg text-gray-400 mt-1">
                 {testimonial.role}, {testimonial.company}
               </p>
             </div>
-            <div className="mt-4 text-2xl font-bold">{testimonial.company}</div>
+            <div className="mt-4 text-3xl font-bold">{testimonial.company}</div>
           </div>
         </div>
 
         {/* Next */}
         <button
           onClick={nextSlide}
-          className="text-white rounded-full border border-white p-3 hover:bg-white hover:text-black transition"
+          className="text-white rounded-full border border-white p-5 hover:bg-white hover:text-black transition text-2xl"
         >
           <FaChevronRight />
         </button>

@@ -76,4 +76,15 @@ export const platformHeroData = [
       { text: "Start free Trial", link: "/" },
     ],
   },
+   {
+    id: "forDeveloper",
+    heading: "Deliver experiences",
+    highlight: "your way",
+    description:"A cloud-native headless CMS that lets you build any kind of digital experience, using the technologies and frameworks of your choice. With Kontent.ai, marketing teams can work independently on content, giving developers the time and freedom to focus on engineering work.",
+    buttons: [
+      { text: "See if we’re a fit", link: "/" },
+      { text: "Start free Trial", link: "/" },
+    ],
+  },
+  
 ];

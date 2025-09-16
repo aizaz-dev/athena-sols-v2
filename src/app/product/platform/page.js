@@ -1,10 +1,8 @@
 import React from 'react'
-import ContentGovernance from '../../component/Product/platform/ContentGovernance/ContentGovernance'
 import ContentManagement from '../../component/Product/platform/ContentManagement/ContentManagement'
 import MissionControl from '../../component/Home/MissionControl/MissionControl'
 import FlexibilitySection from '../../component/Product/platform/FlexibilitySection/FlexibilitySection'
 import SuccessStories from '../../component/Product/platform/SuccessStories/SuccessStories'
-import UniquePowerfull from '../../component/Product/platform/UniquePowerfull/UniquePowerfull'
 import CustomHeading from '@/app/component/Same/CustomHeading/CustomHeading'
 import { extSectionData } from '@/app/data/CustomHeading/CustomHeadingData'
 import ContentSlider from '@/app/component/Same/ContentSlider/ContentSlider'
@@ -13,6 +11,10 @@ import Hero from '@/app/component/Same/Hero/Hero'
 import { platformHeroData } from '@/app/data/HeroComponentData/HeroComponentData'
 import VideoSection from '@/app/component/Same/Video/VideoSection'
 import { ControlEfficiencyVideo } from '@/app/data/VideoSectionData/videoSection'
+import FutureProofLogos from '@/app/component/Same/FutureProofLogos/FutureProofLogos'
+import { futureProofData } from '@/app/data/FutureProof/FutureProofData'
+import ImageRightSection from '@/app/component/Same/ImageRightSection/ImageRightSection'
+import { Explore, Governance } from '@/app/data/ImageRightSection/imageRightSection'
 
 const ThePlatForm = () => {
   return (
@@ -22,12 +24,12 @@ const ThePlatForm = () => {
       pageTitle="Create and publish content"
       pageHighlight="faster"/>
       <VideoSection {...ControlEfficiencyVideo} />
-      <ContentGovernance />
+      <ImageRightSection {...Governance} />
       <ContentManagement />
       <MissionControl />
       <FlexibilitySection />
       <SuccessStories />
-      <UniquePowerfull />
+      <FutureProofLogos data={futureProofData} />
       <CustomHeading {...extSectionData} />
 
     </>

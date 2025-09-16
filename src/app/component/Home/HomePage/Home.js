@@ -1,8 +1,9 @@
+import { forDeveloperFutureProofData } from "@/app/data/FutureProof/FutureProofData";
+import FutureProofLogos from "../../Same/FutureProofLogos/FutureProofLogos";
 import AccordionSlider from "../AccordionSlider/AccordionSlider";
 import CTASection from "../CTASection/CTASection";
 import CustomerStories from "../CustomerStories/CustomerStories";
 import DiscoverNext from "../DiscoverNext/DiscoverNext";
-import FutureProof from "../FutureProof/FutureProof";
 import HeroSection from "../HeroSection/HeroSection";
 import CardInfo from "../Infocard/Cardsinfo";
 import LogoMarquee from "../LogoMarquee/LogoMarque";
@@ -17,7 +18,7 @@ function HomePage() {
       <CardInfo />
       <DiscoverNext />
       <AccordionSlider />
-      <FutureProof />
+      <FutureProofLogos data={forDeveloperFutureProofData} />
       <MissionControl />
       <CustomerStories />
       <SecuritySection />

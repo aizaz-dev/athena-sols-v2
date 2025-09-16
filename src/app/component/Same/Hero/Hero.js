@@ -7,13 +7,13 @@ export default function Hero({ data }) {
   const { heading, highlight, description, buttons } = data;
 
   return (
-    <section className="relative bg-black text-white overflow-hidden min-h-screen flex items-center justify-center">
+    <section className="relative bg-black text-white overflow-hidden min-h-200 flex items-center justify-center">
       <div className="max-w-7xl px-4 sm:px-8 lg:px-12 py-16 sm:py-20 text-center">
         {/* Heading */}
         <h1
           className="tracking-tight leading-[1.15] 
                      text-4xl sm:text-5xl md:text-7xl lg:text-[90px] xl:text-[110px] 
-                     font-extrabold uppercase"
+                      uppercase"
         >
           {heading}{" "}
           <span

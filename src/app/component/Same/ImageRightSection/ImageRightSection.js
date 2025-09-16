@@ -26,7 +26,7 @@ const ImageRightSection = ({
         <p className="text-lg text-gray-200 mb-6">{description}</p>
 
         {buttonText && (
-          <button className="px-14 py-3 border rounded-full text-white font-medium hover:bg-white   shadow-md hover:text-black transition">
+          <button className="px-14 py-5 border rounded-full text-white font-medium hover:bg-white   shadow-md hover:text-black transition">
             {buttonText}
           </button>
         )}

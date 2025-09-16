@@ -87,3 +87,21 @@ export const Explore = {
   image: "/product/extsection.webp",
   buttonText: "Learn More",
 };
+export const Extend = {
+  title: "Extend your workspace with powerful",
+  highlight: "custom apps",
+  description:
+  "Level up your content operations by embedding full-screen tools and dashboards directly in Kontent.ai. Custom apps let you integrate external services, create specialized content views, and build custom workflows – all seamlessly within switching contexts. From SEO analytics to translation management, work with everything you need without leaving the platform.",
+  image: "/product/extsection.webp",
+  buttonText: "Learn More",
+  reverse: true
+};
+export const Governance = {
+  title: "Better quality content through",
+  highlight: " tight governance",
+  description:
+  "Governance is a key component of high-quality content—content that’s consistent, accurate, and engaging. In Kontent.ai, organizations have complete control over their content: who can work with it, how it moves through workflows, where it’s published, and more.",
+  image: "/product/extsection.webp",
+  buttonText: "Learn More",
+  
+};
