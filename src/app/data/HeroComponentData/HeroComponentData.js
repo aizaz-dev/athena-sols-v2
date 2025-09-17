@@ -96,5 +96,35 @@ export const platformHeroData = [
       { text: "Start free Trial", link: "/" },
     ],
   },
-  
+  {
+    id: "insurance",
+    heading: "Manage",
+    highlight: "insurance content",
+    description:"Create, customize, and reuse content, speeding up time to value while meeting compliance requirements. Future-proof your content strategy with a CMS that scales with you.",
+    buttons: [
+      { text: "See if we’re a fit", link: "/" },
+      { text: "Start free Trial", link: "/" },
+    ],
+  },
+   {
+    id: "banking",
+    heading: "Manage",
+    highlight: "financial content",
+    description:"Provide accurate information and reliable, secure digital services on multiple channels with a CMS designed to support the requirements of highly regulated industries.",
+    buttons: [
+      { text: "See if we’re a fit", link: "/" },
+      { text: "Start free Trial", link: "/" },
+    ],
+  },
+   {
+    id: "manufacturing",
+    heading: "Manage",
+    highlight: "manufacturing content",
+    description:"Take control of your content value chain and get to market faster. Multi-channel publishing, enhanced collaboration, governance, and more: all in a single CMS.",
+    buttons: [
+      { text: "See if we’re a fit", link: "/" },
+      { text: "Start free Trial", link: "/" },
+    ],
+  },
+
 ];

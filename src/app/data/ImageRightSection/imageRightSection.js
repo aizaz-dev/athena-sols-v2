@@ -116,3 +116,16 @@ export const WebMD = {
   reverse:true
   
 };
+
+export const SolutionPageSection = {
+  title: "A 70%",
+  highlight: "efficiency gain",
+  description:
+  `With Kontent.ai, a medical technology company has reduced the time it takes to create a new page by 80%–from 30 hours to just 4-6 hours. Increased productivity has led to a 70% efficiency gain.
+
+The Director of IT Applications at the company said, “Kontent.ai’s impact has been nothing short of transformative.”`,
+  image: "/product/extsection.webp",
+  buttonText: "See if you're fit",
+  reverse:true
+  
+};

@@ -36,3 +36,15 @@ export const healthcare = {
   paragraph:
     "Clean, structured content and an intuitive authoring experience lets marketers own the content while you focus on delivering amazing digital experiences.",
 };
+export const banking = {
+  heading: (
+    <>
+     Consistent and trustworthy experiences{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5F4BFF] to-[#5F4BFF]">
+       across all touchpoints
+      </span>
+    </>
+  ),
+  paragraph:
+    "Today’s customers expect their banking experience to be as smooth and hassle-free as online shopping. But they also demand a higher level of trust from financial institutions. Kontent.ai’s modular, reusable approach to content management enables banks to create the modern experiences customers demand, while keeping content compliant.",
+};

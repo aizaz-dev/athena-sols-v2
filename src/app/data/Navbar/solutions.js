@@ -71,12 +71,12 @@ const solutionsMenu = {
     {
       title: "Industries",
       items: [
-        { label: "Healthcare", href: "/industries/healthcare", icon: <FaHeartbeat /> },
-        { label: "Insurance", href: "/industries/insurance", icon: <FaUserShield /> },
-        { label: "Banking and finance", href: "/industries/banking", icon: <FaUniversity /> },
-        { label: "Manufacturing", href: "/industries/manufacturing", icon: <FaIndustry /> },
-        { label: "Education", href: "/industries/education", icon: <FaGraduationCap /> },
-        { label: "Travel and tourism", href: "/industries/travel", icon: <FaCarSide /> },
+        { label: "Healthcare", href: "/solution/healthcare", icon: <FaHeartbeat /> },
+        { label: "Insurance", href: "/solution/insurance", icon: <FaUserShield /> },
+        { label: "Banking and finance", href: "/solution/banking", icon: <FaUniversity /> },
+        { label: "Manufacturing", href: "/solution/manufacturing", icon: <FaIndustry /> },
+        { label: "Education", href: "/solutionries/education", icon: <FaGraduationCap /> },
+        { label: "Travel and tourism", href: "/solution/travel", icon: <FaCarSide /> },
       ],
       footer: { label: "See all industries", href: "/industries" },
     },

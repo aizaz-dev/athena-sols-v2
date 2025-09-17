@@ -2,7 +2,7 @@
 
 export default function TechStackSection({ data }) {
   return (
-    <section className="bg-black text-white px-6 sm:px-12 md:px-14 lg:px-34 py-20">
+    <section className="bg-black text-white px-6 sm:px-12 md:px-14 lg:px-44 pt-5">
       <div className="max-w-3xl">
         {/* Heading */}
         <h2 className="text-4xl md:text-[2.3rem] font-bold leading-tight">
