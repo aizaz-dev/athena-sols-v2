@@ -105,3 +105,14 @@ export const Governance = {
   buttonText: "Learn More",
   
 };
+export const WebMD = {
+  title: "Driving efficiency and control for",
+  highlight: "WebMD Ignite",
+  description:
+  `Responsible for patient education in 80% of healthcare settings in the United States, WebMD Ignite is a global healthcare content leader. By moving from an engineering-dependent system to a more flexible, modern platform, they reduced technical complexity and cut publishing times from months to minutes.
+  Christopher Hess, Product Manager at WebMD Ignite shares the impact of Kontent.ai: “The ability to push these various paradigms of content through multiple output formats through [Kontent.ai] just kind of blew the world open and created possibilities that we didn’t have before.”`,
+  image: "/product/extsection.webp",
+  buttonText: "Read success story",
+  reverse:true
+  
+};

@@ -86,5 +86,15 @@ export const platformHeroData = [
       { text: "Start free Trial", link: "/" },
     ],
   },
+  {
+    id: "healthcare",
+    heading: "Manage",
+    highlight: "healthcare content",
+    description:"Unify your healthcare content ecosystem with a single, HIPAA-compliant CMS platform. Ensure accuracy, maintain compliance, and drive efficient content operations with Kontent.ai.",
+    buttons: [
+      { text: "See if we’re a fit", link: "/" },
+      { text: "Start free Trial", link: "/" },
+    ],
+  },
   
 ];

@@ -1,35 +1,38 @@
 "use client";
 import Link from "next/link";
 
-export default function DropdownMenu({ links, promo, isMobile = false, align = "left" }) {
+export default function DropdownMenu({ links, promo, isMobile = false }) {
   return (
     <>
-      {/* Desktop Mega Menu */}
+      {/* ================== DESKTOP ================== */}
       {!isMobile && (
         <div
-          className={`
-            w-[950px] rounded-xl shadow-2xl bg-[#111] text-white p-8 flex gap-10 z-50
-            min-h-[300px] max-h-[80vh]
-            ${align === "right" ? "right-0" : "left-0"}
-          `}
+          className="
+            fixed top-[72px] left-1/2 -translate-x-1/2
+            w-[1280px] min-h-[600px] 
+            rounded-2xl shadow-2xl bg-[#111] text-white 
+            p-12 flex gap-12 z-50
+          "
         >
-          {/* Links Columns */}
-          <div className="flex-1 grid grid-cols-2 gap-8">
+          {/* 3 Columns Section */}
+          <div className="flex-1 grid grid-cols-3 gap-12 border-r border-gray-800 pr-12">
             {links.map((col, i) => (
               <div key={i}>
-                <h3 className="text-[13px] uppercase tracking-wide mb-4 border-b border-gray-700 pb-2">
+                <h3 className="text-[14px] uppercase tracking-wide font-semibold mb-6 border-b border-gray-700 pb-2 text-gray-300">
                   {col.title}
                 </h3>
-                <ul className="space-y-3 text-[15px]">
+                <ul className="space-y-6 text-[15px]">
                   {col.items.map((item, j) => (
                     <li key={j}>
                       <Link
-                        href={item.href}
-                        className="hover:text-indigo-400 flex items-start gap-2 py-1.5"
+                        href={item.href || "#"}
+                        className="hover:text-indigo-400 flex items-start gap-3"
                       >
-                        {item.icon && <span>{item.icon}</span>}
+                        {item.icon && (
+                          <span className="text-indigo-400 mt-0.5">{item.icon}</span>
+                        )}
                         <span>
-                          <span className="block font-medium">{item.label}</span>
+                          <span className="block font-semibold">{item.label}</span>
                           {item.desc && (
                             <span className="text-[13px] text-gray-400">{item.desc}</span>
                           )}
@@ -42,44 +45,57 @@ export default function DropdownMenu({ links, promo, isMobile = false, align = "
             ))}
           </div>
 
-          {/* Promo Box */}
+          {/* Right-hand Promo */}
           {promo && (
-            <div className="w-1/3">
-              <div className="bg-indigo-500 p-6 rounded-xl text-white flex flex-col gap-3 h-full justify-between">
+            <div className="w-[360px]">
+              <Link
+                href={promo.href || "#"}
+                className="relative rounded-xl overflow-hidden group shadow-lg block bg-gray-900"
+              >
                 {promo.image && (
-                  <img src={promo.image} alt="Promo" className="rounded-lg mb-3" />
+                  <img
+                    src={promo.image}
+                    alt={promo.text}
+                    className="w-full h-[200px] object-cover group-hover:scale-105 transition-transform"
+                  />
                 )}
-                <p className="text-lg font-semibold leading-snug">{promo.text}</p>
-                <Link
-                  href={promo.href}
-                  className="border border-white rounded-full px-4 py-2 text-center hover:bg-white hover:text-indigo-600 transition"
-                >
-                  {promo.cta}
-                </Link>
-              </div>
+                <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4">
+                  <p className="text-white font-semibold text-lg leading-snug">
+                    {promo.text}
+                  </p>
+                  {promo.cta && (
+                    <span className="mt-2 inline-block bg-white text-indigo-600 text-sm font-semibold px-4 py-2 rounded-full group-hover:bg-indigo-600 group-hover:text-white transition">
+                      {promo.cta}
+                    </span>
+                  )}
+                </div>
+              </Link>
             </div>
           )}
         </div>
       )}
 
-      {/* Mobile Stacked Menu */}
+      {/* ================== MOBILE ================== */}
       {isMobile && (
         <div className="flex flex-col gap-6 bg-[#111] text-white rounded-xl p-4 mt-3">
+          {/* Links */}
           {links.map((col, i) => (
             <div key={i}>
-              <h3 className="text-[13px] uppercase tracking-wide mb-3 border-b border-gray-700 pb-2">
+              <h3 className="text-[14px] uppercase tracking-wide mb-3 border-b border-gray-700 pb-2 text-gray-300">
                 {col.title}
               </h3>
-              <ul className="space-y-2 text-[15px]">
+              <ul className="space-y-4 text-[15px]">
                 {col.items.map((item, j) => (
                   <li key={j}>
                     <Link
-                      href={item.href}
-                      className="hover:text-indigo-400 flex items-start gap-2 py-1.5"
+                      href={item.href || "#"}
+                      className="hover:text-indigo-400 flex items-start gap-3"
                     >
-                      {item.icon && <span>{item.icon}</span>}
+                      {item.icon && (
+                        <span className="text-indigo-400 mt-0.5">{item.icon}</span>
+                      )}
                       <span>
-                        <span className="block font-medium">{item.label}</span>
+                        <span className="block font-semibold">{item.label}</span>
                         {item.desc && (
                           <span className="text-[13px] text-gray-400">{item.desc}</span>
                         )}
@@ -91,20 +107,28 @@ export default function DropdownMenu({ links, promo, isMobile = false, align = "
             </div>
           ))}
 
-          {/* Promo Box */}
+          {/* Promo (Mobile) */}
           {promo && (
-            <div className="bg-indigo-500 p-5 rounded-xl text-white flex flex-col gap-3">
+            <Link
+              href={promo.href || "#"}
+              className="relative rounded-xl overflow-hidden shadow-md block bg-gray-900"
+            >
               {promo.image && (
-                <img src={promo.image} alt="Promo" className="rounded-lg mb-3" />
+                <img
+                  src={promo.image}
+                  alt={promo.text}
+                  className="w-full h-[160px] object-cover"
+                />
               )}
-              <p className="text-base font-semibold leading-snug">{promo.text}</p>
-              <Link
-                href={promo.href}
-                className="border border-white rounded-full px-4 py-2 text-center hover:bg-white hover:text-indigo-600 transition"
-              >
-                {promo.cta}
-              </Link>
-            </div>
+              <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-3">
+                <p className="text-white font-semibold text-base">{promo.text}</p>
+                {promo.cta && (
+                  <span className="mt-2 inline-block bg-white text-indigo-600 text-xs font-semibold px-3 py-1.5 rounded-full">
+                    {promo.cta}
+                  </span>
+                )}
+              </div>
+            </Link>
           )}
         </div>
       )}

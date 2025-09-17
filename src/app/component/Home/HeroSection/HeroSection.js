@@ -7,7 +7,7 @@ export default function HeroSection() {
       <div className="max-w-7xl px-6 sm:px-10 lg:px-9 py-28 text-center lg:text-left">
         {/* Heading */}
         <h1
-          className="font-extrabold tracking-tight leading-[1.1] 
+          className=" tracking-tight leading-[1.1] 
                      text-5xl sm:text-6xl lg:text-[90px] uppercase"
         >
           THE CMS THAT

@@ -23,3 +23,16 @@ export const techStackForDevData2 = {
   paragraph:
     "Clean, structured content and an intuitive authoring experience lets marketers own the content while you focus on delivering amazing digital experiences.",
 };
+
+export const healthcare = {
+  heading: (
+    <>
+     Give marketers independence{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5F4BFF] to-[#5F4BFF]">
+       over content
+      </span>
+    </>
+  ),
+  paragraph:
+    "Clean, structured content and an intuitive authoring experience lets marketers own the content while you focus on delivering amazing digital experiences.",
+};

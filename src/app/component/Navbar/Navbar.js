@@ -7,12 +7,14 @@ import DropdownMenu from "./DropDownMenu/DropdownMenu";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null); // ✅ FIXED
+  const [openDropdown, setOpenDropdown] = useState(null);
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-black text-white px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between flex-wrap z-50 shadow-md">
       {/* Logo */}
-      <Link href='/' className="text-xl sm:text-2xl font-bold">KONTENT.AI</Link>
+      <Link href="/" className="text-xl sm:text-2xl font-bold">
+        KONTENT.AI
+      </Link>
 
       {/* Desktop Navigation */}
       <ul className="hidden lg:flex items-center gap-6 xl:gap-8 text-sm relative">
@@ -24,7 +26,6 @@ export default function Navbar() {
               </button>
               <div className="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200">
                 <DropdownMenu
-                
                   links={item.links}
                   promo={item.promo}
                   align={i >= navItems.length - 2 ? "right" : "left"}
@@ -33,7 +34,7 @@ export default function Navbar() {
             </li>
           ) : (
             <li key={i}>
-              <Link href={item.href} className="hover:text-indigo-400">
+              <Link href={item.href || "#"} className="hover:text-indigo-400">
                 {item.label}
               </Link>
             </li>
@@ -46,7 +47,7 @@ export default function Navbar() {
         <button aria-label="search">
           <Search size={18} />
         </button>
-       
+
         <Link
           href="/fit"
           className="bg-indigo-500 hover:bg-indigo-600 px-4 sm:px-5 py-2 rounded-full text-sm hidden lg:inline-block"
@@ -90,7 +91,7 @@ export default function Navbar() {
             ) : (
               <Link
                 key={i}
-                href={item.href}
+                href={item.href || "#"}
                 className="hover:text-indigo-400 border-b border-gray-700 pb-2"
               >
                 {item.label}

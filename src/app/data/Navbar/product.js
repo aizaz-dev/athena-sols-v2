@@ -7,7 +7,7 @@ const productMenu = {
   label: "Product",
   links: [
     {
-      section: "The platform",
+      title: "The platform",
       items: [
         { label: "The platform", href: "/product/platform", icon: <FaBox /> },
         { label: "Mission Control", href: "/product/mission-control", icon: <FaChartBar /> },
@@ -19,7 +19,7 @@ const productMenu = {
       ],
     },
     {
-      section: "Designed for",
+      title: "Designed for",
       items: [
         {
           label: "Content-driven organizations",
@@ -48,11 +48,12 @@ const productMenu = {
       ],
     },
   ],
-  promo: {
-    text: "Experience better content delivery. Free for 30 days.",
-    cta: "Start free trial",
-    href: "/product/free-trial",
-  },
+ promo: {
+  text: "Experience better content delivery. Free for 30 days.",
+  cta: "Start free trial",
+  href: "/product/free-trial",
+  image: "/images/free-trial.jpg", 
+},
 };
 
 export default productMenu;
