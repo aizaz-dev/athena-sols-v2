@@ -75,7 +75,7 @@ const solutionsMenu = {
         { label: "Insurance", href: "/solution/insurance", icon: <FaUserShield /> },
         { label: "Banking and finance", href: "/solution/banking", icon: <FaUniversity /> },
         { label: "Manufacturing", href: "/solution/manufacturing", icon: <FaIndustry /> },
-        { label: "Education", href: "/solutionries/education", icon: <FaGraduationCap /> },
+        { label: "Education", href: "/solution/education", icon: <FaGraduationCap /> },
         { label: "Travel and tourism", href: "/solution/travel", icon: <FaCarSide /> },
       ],
       footer: { label: "See all industries", href: "/industries" },

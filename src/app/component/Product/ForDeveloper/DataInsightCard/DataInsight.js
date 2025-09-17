@@ -7,7 +7,7 @@ import { LuGem } from "react-icons/lu";
 export default function DataInsightdeveloper() {
   const items = [
     {
-      icon: <FiBarChart2 className="text-3xl text-white" />,
+      icon: <FiBarChart2 className="text-3xl text-white " />,
       title: "Analyze everything from one home base",
       desc: "Get insight into everything that’s happening with your teams and content in one place. Stay in the loop about the status and pace of content production with easy-to-analyze widgets, filters, and time frames.",
     },
@@ -24,10 +24,10 @@ export default function DataInsightdeveloper() {
   ];
 
   return (
-    <section className="bg-black text-white  px-12">
+    <section className="bg-black  text-white   px-12">
     
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1400px] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
         {items.map((item, idx) => (
           <div
             key={idx}

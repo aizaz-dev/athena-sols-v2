@@ -38,7 +38,7 @@ const badges = [
 
 export default function ResponsibleAI() {
   return (
-    <section className="bg-black text-white py-20 px-6">
+    <section className="bg-black text-white py-20  px-6">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-left">

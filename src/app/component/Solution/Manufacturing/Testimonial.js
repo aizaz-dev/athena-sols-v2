@@ -15,11 +15,11 @@ const testimonials = [
 
 export default function Testimonial() {
   return (
-    <section className="bg-black text-white py-20 px-6 sm:px-12 md:px-10 lg:px-22">
+    <section className="bg-black text-white py-20  sm:px-12 md:px-10 lg:px-22">
       {testimonials.map((t, i) => (
         <div
           key={i}
-          className="flex flex-col md:flex-row items-center md:items-center justify-center gap-12"
+          className="flex flex-col md:flex-row gap-12 px-14"
         >
           <div className="flex-shrink-0">
             <img
@@ -29,8 +29,8 @@ export default function Testimonial() {
             />
           </div>
           <div className="max-w-2xl">
-            <p className="text-lg md:text-xl leading-relaxed mb-6">
-              <span className="text-[#7062FF] text-3xl font-bold">“</span>
+            <p className="text-xl md:text-2xl leading-relaxed mb-6">
+              <span className="text-[#7062FF] text-4xl font-bold">“</span>
               {t.quote}
             </p>
             <h4 className="font-semibold">{t.name}</h4>

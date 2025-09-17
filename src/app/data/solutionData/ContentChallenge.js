@@ -1,9 +1,9 @@
 const contentChallenges = {
   image: {
-    src: "/images/doctor.png", 
+    src: "/SolutionPage/Gdpr.svg", 
     alt: "Healthcare professional with patient",
-    width: 550,
-    height: 400,
+    width: 500,
+    height: 30,
   },
   heading: {
     main: "Tackling",
