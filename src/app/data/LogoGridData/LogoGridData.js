@@ -1,8 +1,8 @@
 export const educationLogos = [
-  "/logo1.png",
-  "/logo2.png",
-  "/logo3.png",
-  "/logo4.png", 
+  "/SolutionPage/gridLogos/leader.webp",
+  "/SolutionPage/gridLogos/easiest.webp",
+  "/SolutionPage/gridLogos/bestSupport.webp",
+  "/SolutionPage/gridLogos/high.webp", 
 ];
 
 export const travelLogos = [
