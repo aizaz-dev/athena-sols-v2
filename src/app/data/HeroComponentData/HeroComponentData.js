@@ -127,4 +127,25 @@ export const platformHeroData = [
     ],
   },
 
+    {
+    id: "education",
+    heading: "Manage",
+    highlight: "education content",
+    description:"Deliver website and portal experiences that make the grade. Govern all content production in a single CMS to ensure information at every touch point is accurate and trustworthy.",
+    buttons: [
+      { text: "See if we’re a fit", link: "/" },
+      { text: "Start free Trial", link: "/" },
+    ],
+  },
+    {
+    id: "travel",
+    heading: "Manage",
+    highlight: "tourism content",
+    description:"Power first-class travel experiences with fresh, engaging content. Make quick edits, push alerts, and keep customers informed—all without developer involvement.",
+    buttons: [
+      { text: "See if we’re a fit", link: "/" },
+      { text: "Start free Trial", link: "/" },
+    ],
+  },
+  
 ];

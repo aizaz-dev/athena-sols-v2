@@ -1,25 +1,25 @@
-const contentChallenges = {
+const contentChallengesData = {
   image: {
-    src: "/SolutionPage/Gdpr.svg", 
-    alt: "Healthcare professional with patient",
-    width: 500,
-    height: 30,
+    src: "/SolutionPage/star.webp", // put this inside /public
+    alt: "Travel Image",
+    width: 600,
+    height: 200,
   },
   heading: {
     main: "Tackling",
     highlight: "content challenges",
-    suffix: "for healthcare organizations",
+    suffix: "for travel and tourism",
   },
-  intro: "Kontent.ai helps healthcare organizations:",
+  intro: "Kontent.ai helps travel and tourism businesses:",
   points: [
-    "Achieve a HIPAA-compliant approach to content management",
-    "Provide immediate and accurate answers to healthcare questions via all channels",
-    "Guide patients online on the path to better health",
-    "Ensure their tone and message match their values and organizational culture",
-    "Keep their content consistent, relevant, and compliant across all touchpoints",
+    "React in real time to rapidly changing situations and provide customers with critical information",
+    "Offer personalized travel offers to customers on their preferred channels",
+    "Ensure content is compliant with local regulations",
+    "Translate and localize content for all their audiences",
+    "Improve the employee experience with valuable employee portals",
   ],
   outro:
-    "Choosing Kontent.ai as a CMS can transform content operations for healthcare organizations, resulting in up-to-date and relevant information delivered to your patients on every channel, and delivering consistent, engaging digital experiences across all digital touchpoints.",
+    "Providing customers a seamless travel experience gives businesses a serious advantage in a competitive industry. Deliver trustworthy content across all customer experiences with Kontent.ai.",
 };
 
-export default contentChallenges;
+export default contentChallengesData;
