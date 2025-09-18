@@ -6,7 +6,7 @@ export default function Certifications({ heading, data }) {
   return (
     <section className="bg-black text-white px-6 md:px-16 py-20">
       {/* Heading with left padding */}
-      <div className="mb-14 pl-4 sm:pl-6 md:pl-10 text-left">
+      <div className="mb-14 pl-9 sm:pl-6 md:pl-65 text-left">
         <h2 className="text-3xl md:text-4xl font-semibold leading-snug">
           {heading.before}{" "}
           <span className="text-[#7062FF]">{heading.highlight}</span>{" "}

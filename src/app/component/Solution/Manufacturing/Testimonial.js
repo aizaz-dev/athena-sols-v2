@@ -15,7 +15,7 @@ const testimonials = [
 
 export default function Testimonial() {
   return (
-    <section className="bg-black text-white py-20  sm:px-12 md:px-10 lg:px-22">
+    <section className="bg-black text-white py-20  sm:px-12 md:px-10 lg:px-42">
       {testimonials.map((t, i) => (
         <div
           key={i}
@@ -28,7 +28,7 @@ export default function Testimonial() {
               className="rounded-lg object-cover w-[320px] h-[320px]"
             />
           </div>
-          <div className="max-w-2xl">
+          <div className="max-w-4xl">
             <p className="text-xl md:text-2xl leading-relaxed mb-6">
               <span className="text-[#7062FF] text-4xl font-bold">“</span>
               {t.quote}

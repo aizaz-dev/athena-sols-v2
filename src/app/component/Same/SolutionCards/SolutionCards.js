@@ -3,8 +3,8 @@ import React from "react";
 
 export default function SolutionCards({ features }) {
   return (
-    <section className="bg-black px-6 sm:px-12 md:px-20 lg:px-32 py-16 overflow-x-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 md:gap-8 justify-items-center">
+    <section className="bg-black px-6 sm:px-12 md:px-20 lg:px-32 justify-items-center py-16 overflow-x-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10  px-6 ">
         {features.map((feature, idx) => (
           <div
             key={idx}
