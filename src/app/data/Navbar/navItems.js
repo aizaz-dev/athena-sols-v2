@@ -160,7 +160,7 @@ const solutionsMenu = {
 
 const resourcesMenu = {
   label: "Resources",
-  type: "resources", // 👈 required
+  type: "resources", 
   sidebar: [
     { label: "TCO calculator", href: "/resources/tco-calulator", icon: <FaBox /> },
     { label: "Blog", href: "/resources/blog", icon: <FaChartBar /> },
