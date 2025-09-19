@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Search, Menu, X } from "lucide-react";
 import { useState } from "react";
-import navItems from "../../data/Navbar";
+import navItems from "../../data/Navbar/navItems";
 import DropdownMenu from "./DropDownMenu/DropdownMenu";
 
 export default function Navbar() {
@@ -19,7 +19,7 @@ export default function Navbar() {
       {/* Desktop Navigation */}
       <ul className="hidden lg:flex items-center gap-6 xl:gap-8 text-sm relative">
         {navItems.map((item, i) =>
-          item.links ? (
+          (item.links || item.type === "resources") ? (
             <li key={i} className="relative group">
               <button className="hover:text-indigo-400 flex items-center gap-1">
                 {item.label} ▾ {item.icon}
@@ -28,6 +28,9 @@ export default function Navbar() {
                 <DropdownMenu
                   links={item.links}
                   promo={item.promo}
+                  type={item.type}
+                  sidebar={item.sidebar}
+                  cards={item.cards}
                   align={i >= navItems.length - 2 ? "right" : "left"}
                 />
               </div>
@@ -69,7 +72,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col p-4 sm:p-6 gap-4 lg:hidden max-h-[80vh] overflow-y-auto">
           {navItems.map((item, i) =>
-            item.links ? (
+            (item.links || item.type === "resources") ? (
               <div key={i} className="border-b border-gray-700 pb-3">
                 <button
                   className="w-full flex justify-between items-center"
@@ -84,6 +87,9 @@ export default function Navbar() {
                   <DropdownMenu
                     links={item.links}
                     promo={item.promo}
+                    type={item.type}
+                    sidebar={item.sidebar}
+                    cards={item.cards}
                     isMobile={true}
                   />
                 )}
