@@ -5,6 +5,7 @@ import {
   FaLanguage, FaHeartbeat, FaUserShield, FaUniversity, FaIndustry, 
   FaGraduationCap, FaCarSide 
 } from "react-icons/fa";
+import { FaAward, FaBriefcase, FaHandshake, FaHeadset } from "react-icons/fa6";
 
 /* ===================== PRODUCT MENU ===================== */
 const productMenu = {
@@ -193,22 +194,14 @@ const resourcesMenu = {
 /* ===================== COMPANY MENU ===================== */
 const companyMenu = {
   label: "Company",
-  links: [
-    {
-      section: "About us",
-      items: [
-        { label: "🏢 Our Story", href: "/about" },
-        { label: "👥 Team", href: "/team" },
-        { label: "💼 Careers", href: "/careers" },
-      ],
-    },
-    {
-      section: "More",
-      items: [
-        { label: "📰 Blog", href: "/blog" },
-        { label: "📩 Contact", href: "/contact" },
-      ],
-    },
+  type: "company",
+  items: [
+    { label: "About us", href: "/about", icon: <FaUsers /> },
+    { label: "Security and trust", href: "/security", icon: <FaShieldAlt /> },
+    { label: "Partners", href: "/partners", icon: <FaHandshake /> },
+    { label: "Awards", href: "/awards", icon: <FaAward /> },
+    { label: "Customer success services", href: "/customer-success", icon: <FaHeadset /> },
+    { label: "Careers", href: "/careers", icon: <FaBriefcase /> },
   ],
 };
 

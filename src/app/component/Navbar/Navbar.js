@@ -19,7 +19,8 @@ export default function Navbar() {
       {/* Desktop Navigation */}
       <ul className="hidden lg:flex items-center gap-6 xl:gap-8 text-sm relative">
         {navItems.map((item, i) =>
-          (item.links || item.type === "resources") ? (
+          // show dropdown if item has links/sidebars/items or is special type
+          (item.links || item.items || item.sidebar || item.type === "resources" || item.type === "company") ? (
             <li key={i} className="relative group">
               <button className="hover:text-indigo-400 flex items-center gap-1">
                 {item.label} ▾ {item.icon}
@@ -31,6 +32,7 @@ export default function Navbar() {
                   type={item.type}
                   sidebar={item.sidebar}
                   cards={item.cards}
+                  items={item.items}                // important: pass items
                   align={i >= navItems.length - 2 ? "right" : "left"}
                 />
               </div>
@@ -72,7 +74,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col p-4 sm:p-6 gap-4 lg:hidden max-h-[80vh] overflow-y-auto">
           {navItems.map((item, i) =>
-            (item.links || item.type === "resources") ? (
+            (item.links || item.items || item.sidebar || item.type === "resources" || item.type === "company") ? (
               <div key={i} className="border-b border-gray-700 pb-3">
                 <button
                   className="w-full flex justify-between items-center"
@@ -90,6 +92,7 @@ export default function Navbar() {
                     type={item.type}
                     sidebar={item.sidebar}
                     cards={item.cards}
+                    items={item.items}   // pass items for company
                     isMobile={true}
                   />
                 )}
