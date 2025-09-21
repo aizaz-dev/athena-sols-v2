@@ -11,3 +11,12 @@ export const extSectionData = {
   buttonText: "See if we’re a fit",
   image: "/SecurityComponent/CMSPIC.webp",
 };
+
+
+// About Page
+export const aboutcustomHeadingData = {
+  title: `Do you want to work with us?`,
+  buttonText: "Join",
+  image: "/SecurityComponent/CMSPIC.webp",
+};
+

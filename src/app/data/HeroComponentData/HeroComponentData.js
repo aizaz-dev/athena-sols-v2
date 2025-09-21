@@ -147,5 +147,14 @@ export const platformHeroData = [
       { text: "Start free Trial", link: "/" },
     ],
   },
+    {
+    id: "about",
+    heading: "Get to know",
+    highlight: "Kontent.ai",
+    description:"Kontent.ai is a global company with an award-winning content management system (CMS), benchmark-crushing customer support and services, and more than 140 employees worldwide.",
+    buttons: [
+      { text: "Join Us", link: "/" },
+    ],
+  },
   
 ];
