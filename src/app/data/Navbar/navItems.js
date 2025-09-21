@@ -7,7 +7,12 @@ import {
 } from "react-icons/fa";
 import { FaAward, FaBriefcase, FaHandshake, FaHeadset } from "react-icons/fa6";
 
-/* ===================== PRODUCT MENU ===================== */
+/* ============================================================
+   PRODUCT MENU
+   ------------------------------------------------------------
+   - Contains "The platform" and "Designed for" categories
+   - Includes a single promo card with CTA
+   ============================================================ */
 const productMenu = {
   label: "Product",
   links: [
@@ -61,7 +66,13 @@ const productMenu = {
   },
 };
 
-/* ===================== SOLUTIONS MENU ===================== */
+/* ============================================================
+   SOLUTIONS MENU
+   ------------------------------------------------------------
+   - 3 categories: Solutions, Use cases, Industries
+   - Each category has items + optional footer link
+   - Promo here is an ARRAY of case studies (multi-card layout)
+   ============================================================ */
 const solutionsMenu = {
   label: "Solutions",
   links: [
@@ -157,8 +168,12 @@ const solutionsMenu = {
   ],
 };
 
-/* ===================== RESOURCES MENU ===================== */
-
+/* ============================================================
+   RESOURCES MENU
+   ------------------------------------------------------------
+   - Sidebar menu with key resource links
+   - Right-hand side: featured articles, guides, reports
+   ============================================================ */
 const resourcesMenu = {
   label: "Resources",
   type: "resources", 
@@ -191,7 +206,12 @@ const resourcesMenu = {
     },
   ],
 };
-/* ===================== COMPANY MENU ===================== */
+
+/* ============================================================
+   COMPANY MENU
+   ------------------------------------------------------------
+   - Simple grid of company-related links
+   ============================================================ */
 const companyMenu = {
   label: "Company",
   type: "company",
@@ -205,7 +225,10 @@ const companyMenu = {
   ],
 };
 
-/* ===================== FINAL NAV ITEMS ===================== */
+/* ============================================================
+   FINAL NAVIGATION ITEMS
+   - Exported for Navbar & DropdownMenu components
+   ============================================================ */
 const navItems = [
   productMenu,
   solutionsMenu,
