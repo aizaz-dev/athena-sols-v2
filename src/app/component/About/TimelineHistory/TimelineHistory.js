@@ -62,7 +62,7 @@ export default function TimelineHistory() {
             <img
               src={timelineData[activeIndex].image}
               alt={timelineData[activeIndex].year}
-              className="w-full h-80 object-cover rounded-xl"
+              className="w-full h-90 object-cover rounded-xl"
             />
           </motion.div>
 
@@ -80,7 +80,7 @@ export default function TimelineHistory() {
             </h3>
             <ul className="space-y-4">
               {timelineData[activeIndex].points.map((point, i) => (
-                <li key={i} className="flex items-start text-white text-lg">
+                <li key={i} className="flex items-start text-white text-2xl">
                   <span className="text-indigo-400 mr-3">{">"}</span>
                   {point}
                 </li>
