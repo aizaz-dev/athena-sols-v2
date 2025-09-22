@@ -11,7 +11,7 @@ const ImageRightSectionGray = ({
 }) => {
   return (
     <section
-      className={`bg-gray-600 text-white py-16 px-6 flex flex-col lg:flex-row items-center justify-center gap-10 ${
+      className={`bg-neutral-800 text-white py-16 px-6 flex flex-col lg:flex-row items-center justify-center gap-10 ${
         reverse ? "lg:flex-row-reverse" : ""
       }`}
     >

@@ -13,8 +13,8 @@ import VideoSection from '@/app/component/Same/Video/VideoSection'
 import { ControlEfficiencyVideo } from '@/app/data/VideoSectionData/videoSection'
 import FutureProofLogos from '@/app/component/Same/FutureProofLogos/FutureProofLogos'
 import { futureProofData } from '@/app/data/FutureProof/FutureProofData'
-import ImageRightSection from '@/app/component/Same/ImageRightSection/ImageRightSection'
-import { Explore, Governance } from '@/app/data/ImageRightSection/imageRightSection'
+import { Governance } from '@/app/data/ImageRightSection/imageRightSection'
+import ImageRightSectionGray from '@/app/component/Same/ImageRightGray/ImageRightGray'
 
 const ThePlatForm = () => {
   return (
@@ -24,7 +24,7 @@ const ThePlatForm = () => {
       pageTitle="Create and publish content"
       pageHighlight="faster"/>
       <VideoSection {...ControlEfficiencyVideo} />
-      <ImageRightSection {...Governance} />
+      <ImageRightSectionGray {...Governance} />
       <ContentManagement />
       <MissionControl />
       <FlexibilitySection />

@@ -26,10 +26,10 @@ const cards = [
 
 const FlexibilitySection = () => {
   return (
-    <section className="bg-black text-white py-20 px-6">
+    <section className="bg-black text-white py-20 ">
       {/* Heading */}
-      <div className="text-center max-w-4xl mx-auto mb-20">
-        <h2 className="text-4xl md:text-5xl font-bold leading-snug">
+      <div className=" max-w-3xl mx-auto mb-10">
+        <h2 className="text-4xl md:text-5xl leading-snug">
           Total flexibility for{" "}
           <span className="text-indigo-500">future growth</span>
         </h2>
@@ -40,12 +40,12 @@ const FlexibilitySection = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="bg-neutral-900 rounded-3xl p-8 flex flex-col justify-between shadow-lg min-h-[400px] w-full"
+            className="bg-neutral-800 rounded-3xl p-8 flex flex-col justify-between shadow-lg min-h-[400px] w-full"
           >
             <div>
               {card.icon}
               <h3 className="text-2xl font-semibold mt-6">{card.title}</h3>
-              <p className="mt-5 text-gray-400 leading-relaxed text-lg">
+              <p className="mt-5 text-white leading-relaxed text-lg">
                 {card.text}
               </p>
             </div>
