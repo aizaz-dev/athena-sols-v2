@@ -6,11 +6,11 @@ export const educationLogos = [
 ];
 
 export const travelLogos = [
-  "/logo5.png",
-  "/logo6.png",
-  "/logo7.png",
-  "/logo7.png",
-  "/logo7.png",
+  "/SolutionPage/Travel/jetsmart-logo.svg",
+  "/SolutionPage/Travel/transavia-logo.svg",
+  "/SolutionPage/Travel/elaska.svg",
+  "/SolutionPage/Travel/expressway-logo.svg",
+  "/SolutionPage/Travel/leo-express-logo.svg",
 ];
 
 

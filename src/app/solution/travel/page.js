@@ -13,7 +13,7 @@ import { WebMD } from '@/app/data/ImageRightSection/imageRightSection'
 import { educationLogos, travelLogos } from '@/app/data/LogoGridData/LogoGridData'
 import certificationsData from '@/app/data/solutionData/certificationsData'
 import contentChallenges from '@/app/data/solutionData/ContentChallenge'
-import { solutionBanking } from '@/app/data/solutionData/SolutionFeatures'
+import { solutionPage } from '@/app/data/solutionData/SolutionFeatures'
 import { testimonialNoImage } from '@/app/data/SolutionTestimonial/SolutionTestimonial'
 import { healthcare } from '@/app/data/techStackSectionData/techStackSectionData'
 import React from 'react'
@@ -25,7 +25,7 @@ const Travel = () => {
         <LogoGrid logos={travelLogos} />
         <ImageRightSection {...WebMD} />
         <TechStackSection data={healthcare} />
-        <SolutionCards features={solutionBanking} />
+        <SolutionCards features={solutionPage} />
         <Testimonial testimonials={testimonialNoImage} />
         <ContentChallenges data={contentChallenges } />
         <Certifications

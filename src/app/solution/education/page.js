@@ -20,7 +20,7 @@ import { healthcare } from "@/app/data/techStackSectionData/techStackSectionData
 const Education =() => {    
     return <>
        <Hero data={platformHeroData.find(item => item.id === "education")} /> 
-        <LogoMarquee />
+        <LogoMarquee  logos={educationLogos}/>
         <ImageRightSection  {...WebMD}/>
         <TechStackSection data={healthcare} />
         <SolutionCards features={solutionBanking} />

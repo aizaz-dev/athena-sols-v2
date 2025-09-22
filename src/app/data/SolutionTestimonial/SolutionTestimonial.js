@@ -23,6 +23,5 @@ export const testimonialNoImage = [
     name: "Casper Cusumano",
     role: "Digital Content Expert, Bancontact Payconiq Company",
     companyLogo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Bancontact_logo.svg/2560px-Bancontact_logo.svg.png",
-  },
+      "/SolutionPage/Travel/elaska.svg",},
 ];

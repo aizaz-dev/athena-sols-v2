@@ -5,46 +5,25 @@ import { useState } from "react";
 import navItems from "../../data/Navbar/navItems";
 import DropdownMenu from "./DropDownMenu/DropdownMenu";
 
-/**
- * Navbar Component
- * 
- * Main navigation component with responsive design:
- * - Desktop: Horizontal navigation with hover-activated dropdowns
- * - Mobile: Collapsible menu with accordion-style dropdowns
- * 
- * Features:
- * - Logo link to homepage
- * - Dynamic navigation items from navItems data
- * - Search functionality
- * - Call-to-action button
- * - Responsive mobile menu with toggle
- */
 export default function Navbar() {
-  // State for mobile menu visibility
   const [mobileOpen, setMobileOpen] = useState(false);
-  
-  // State for tracking which dropdown is open on mobile
   const [openDropdown, setOpenDropdown] = useState(null);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black text-white px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between flex-wrap z-50 shadow-md">
+    <nav className="fixed top-0 left-0 w-full bg-black text-white px-6 sm:px-10 py-5 sm:py-6 flex items-center justify-between flex-wrap z-50 shadow-md">
       {/* Logo */}
-      <Link href="/" className="text-xl sm:text-2xl font-bold">
+      <Link href="/" className="text-2xl sm:text-3xl font-bold">
         KONTENT.AI
       </Link>
 
-      {/* Desktop Navigation */}
-      <ul className="hidden lg:flex items-center gap-6 xl:gap-8 text-sm relative">
+      {/* Desktop Nav */}
+      <ul className="hidden lg:flex items-center gap-8 xl:gap-10 text-base relative">
         {navItems.map((item, index) =>
-          // Check if item has dropdown content
-          (item.links || item.items || item.sidebar || item.type === "resources" || item.type === "company") ? (
+          item.links || item.items || item.sidebar || item.type === "resources" || item.type === "company" ? (
             <li key={index} className="relative group">
-              {/* Dropdown trigger button */}
               <button className="hover:text-indigo-400 flex items-center gap-1">
                 {item.label} ▾ {item.icon}
               </button>
-              
-              {/* Dropdown menu (appears on hover) */}
               <div className="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200">
                 <DropdownMenu
                   links={item.links}
@@ -58,7 +37,6 @@ export default function Navbar() {
               </div>
             </li>
           ) : (
-            // Regular navigation link
             <li key={index}>
               <Link href={item.href || "#"} className="hover:text-indigo-400">
                 {item.label}
@@ -68,22 +46,17 @@ export default function Navbar() {
         )}
       </ul>
 
-      {/* Right side actions */}
-      <div className="flex items-center gap-4 sm:gap-6">
-        {/* Search button */}
+      {/* Right Actions */}
+      <div className="flex items-center gap-5 sm:gap-7">
         <button aria-label="search">
-          <Search size={18} />
+          <Search size={20} />
         </button>
-
-        {/* Call-to-action button (desktop only) */}
         <Link
           href="/fit"
-          className="bg-indigo-500 hover:bg-indigo-600 px-4 sm:px-5 py-2 rounded-full text-sm hidden lg:inline-block"
+          className="bg-indigo-500 hover:bg-indigo-600 px-5 sm:px-6 py-2.5 rounded-full text-base hidden lg:inline-block"
         >
           See if we're a fit
         </Link>
-        
-        {/* Mobile menu toggle button */}
         <button
           className="lg:hidden"
           onClick={() => {
@@ -92,18 +65,16 @@ export default function Navbar() {
           }}
           aria-label="Toggle menu"
         >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          {mobileOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
 
-      {/* Mobile Menu (shown when mobileOpen is true) */}
+      {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col p-4 sm:p-6 gap-4 lg:hidden max-h-[80vh] overflow-y-auto">
+        <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col p-5 sm:p-6 gap-5 lg:hidden max-h-[80vh] overflow-y-auto text-lg">
           {navItems.map((item, index) =>
-            // Check if item has dropdown content
-            (item.links || item.items || item.sidebar || item.type === "resources" || item.type === "company") ? (
+            item.links || item.items || item.sidebar || item.type === "resources" || item.type === "company" ? (
               <div key={index} className="border-b border-gray-700 pb-3">
-                {/* Dropdown trigger button for mobile */}
                 <button
                   className="w-full flex justify-between items-center"
                   onClick={() =>
@@ -113,8 +84,6 @@ export default function Navbar() {
                   <span>{item.label}</span>
                   <span>{openDropdown === index ? "▲" : "▼"}</span>
                 </button>
-                
-                {/* Dropdown content (shown when expanded) */}
                 {openDropdown === index && (
                   <DropdownMenu
                     links={item.links}
@@ -128,7 +97,6 @@ export default function Navbar() {
                 )}
               </div>
             ) : (
-              // Regular navigation link for mobile
               <Link
                 key={index}
                 href={item.href || "#"}
@@ -138,11 +106,9 @@ export default function Navbar() {
               </Link>
             )
           )}
-          
-          {/* Call-to-action button for mobile */}
           <Link
             href="/fit"
-            className="bg-indigo-500 hover:bg-indigo-600 px-5 py-2 rounded-full text-sm text-center"
+            className="bg-indigo-500 hover:bg-indigo-600 px-6 py-2.5 rounded-full text-base text-center"
           >
             See if we're a fit
           </Link>

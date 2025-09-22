@@ -156,5 +156,12 @@ export const platformHeroData = [
       { text: "Join Us", link: "/" },
     ],
   },
+     {
+    id: "industries",
+    heading: "Top",
+    highlight: "industries",
+    description:"Kontent.ai powers consistent, relevant, and engaging experiences for customers across all types of industries. See how a headless CMS can support your teams to create high quality content for your customers on all channels and devices.",
+  },
+  
   
 ];

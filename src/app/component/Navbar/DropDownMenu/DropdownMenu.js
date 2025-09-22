@@ -1,25 +1,6 @@
 "use client";
 import Link from "next/link";
 
-/**
- * DropdownMenu Component
- * 
- * A flexible dropdown menu system that handles multiple layout variations:
- * - Company menu: Simple grid layout
- * - Resources menu: Sidebar navigation with promotional cards
- * - Default menu: Multi-column layout with promotional content (Product/Solutions)
- * 
- * Supports both desktop and mobile responsive layouts with appropriate styling.
- * 
- * @param {Object} props - Component properties
- * @param {Array} props.links - Navigation links array for multi-column layouts
- * @param {Object|Array} props.promo - Promotional content (single item or array)
- * @param {string} props.type - Menu type identifier ('company', 'resources', or default)
- * @param {Array} props.sidebar - Sidebar links for Resources menu
- * @param {Array} props.cards - Promotional cards for Resources menu
- * @param {Array} props.items - Company menu items (alternative to links[0].items)
- * @param {boolean} props.isMobile - Mobile layout flag
- */
 export default function DropdownMenu({
   links,
   promo,
@@ -29,23 +10,19 @@ export default function DropdownMenu({
   items,
   isMobile = false,
 }) {
-  // Extract company items from various possible data structures
-  const companyItems = items || 
-    (links && links.length > 0 ? links[0]?.items : undefined) || 
-    links?.items || 
-    sidebar || 
+  const companyItems =
+    items ||
+    (links && links.length > 0 ? links[0]?.items : undefined) ||
+    links?.items ||
+    sidebar ||
     [];
 
   return (
     <>
-      {/* DESKTOP LAYOUT */}
+      {/* DESKTOP */}
       {!isMobile && (
         <>
           {type === "company" ? (
-            /**
-             * COMPANY MENU LAYOUT
-             * Simple two-column grid with icon support
-             */
             <div className="fixed top-[72px] left-1/2 -translate-x-1/2 w-[720px] rounded-2xl shadow-2xl bg-[#111] text-white p-10 z-50">
               <h3 className="text-[14px] uppercase tracking-wide font-semibold mb-6 border-b border-gray-700 pb-2 text-gray-300">
                 Company
@@ -58,7 +35,7 @@ export default function DropdownMenu({
                     className="hover:text-indigo-400 flex items-center gap-3"
                   >
                     {item.icon && (
-                      <span className="text-indigo-400 text-lg">{item.icon}</span>
+                      <span className="text-white text-lg">{item.icon}</span>
                     )}
                     <span className="font-semibold">{item.label}</span>
                   </Link>
@@ -66,12 +43,7 @@ export default function DropdownMenu({
               </div>
             </div>
           ) : type === "resources" ? (
-            /**
-             * RESOURCES MENU LAYOUT
-             * Combines sidebar navigation with promotional cards
-             */
             <div className="fixed top-[72px] left-1/2 -translate-x-1/2 w-[960px] min-h-[480px] rounded-2xl shadow-2xl bg-[#111] text-white p-10 flex gap-10 z-50">
-              {/* Sidebar navigation section */}
               <div className="w-[280px] border-r border-gray-800 pr-8">
                 <h3 className="text-[14px] uppercase tracking-wide font-semibold mb-6 border-b border-gray-700 pb-2 text-gray-300">
                   Resources
@@ -84,7 +56,7 @@ export default function DropdownMenu({
                         className="hover:text-indigo-400 flex items-start gap-3"
                       >
                         {item.icon && (
-                          <span className="text-indigo-400 mt-0.5">{item.icon}</span>
+                          <span className="text-white mt-0.5">{item.icon}</span>
                         )}
                         <span className="font-semibold">{item.label}</span>
                       </Link>
@@ -92,8 +64,6 @@ export default function DropdownMenu({
                   ))}
                 </ul>
               </div>
-
-              {/* Promotional cards grid */}
               <div className="flex-1 grid grid-rows-3 gap-6">
                 {cards?.map((card, index) => (
                   <Link
@@ -121,12 +91,7 @@ export default function DropdownMenu({
               </div>
             </div>
           ) : (
-            /**
-             * DEFAULT MENU LAYOUT (Product/Solutions)
-             * Three-column navigation with promotional section
-             */
             <div className="fixed top-[72px] left-1/2 -translate-x-1/2 w-[1280px] min-h-[480px] rounded-2xl shadow-2xl bg-[#111] text-white p-10 flex gap-10 z-50">
-              {/* Three-column navigation section */}
               <div className="flex-1 grid grid-cols-3 gap-12 border-r border-gray-800 pr-12">
                 {links?.map((column, columnIndex) => (
                   <div key={columnIndex}>
@@ -141,10 +106,14 @@ export default function DropdownMenu({
                             className="hover:text-indigo-400 flex items-start gap-3"
                           >
                             {item.icon && (
-                              <span className="text-indigo-400 mt-0.5">{item.icon}</span>
+                              <span className="text-white mt-0.5">
+                                {item.icon}
+                              </span>
                             )}
                             <span>
-                              <span className="block font-semibold">{item.label}</span>
+                              <span className="block font-semibold">
+                                {item.label}
+                              </span>
                               {item.desc && (
                                 <span className="text-[13px] text-gray-400">
                                   {item.desc}
@@ -155,13 +124,23 @@ export default function DropdownMenu({
                         </li>
                       ))}
                     </ul>
+
+                    {/* Add See all industries only under Industries */}
+                    {column.title === "Industries" && (
+                      <div className="mt-6">
+                        <Link
+                          href="/industries"
+                          className="text-indigo-400 underline hover:text-indigo-300 font-semibold text-[14px]"
+                        >
+                          See all industries
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
 
-              {/* Promotional content section */}
               {promo && Array.isArray(promo) ? (
-                // Multiple promotions layout (Solutions menu)
                 <div className="w-[360px] grid grid-rows-3 gap-6">
                   {promo.map((promoItem, promoIndex) => (
                     <Link
@@ -185,7 +164,6 @@ export default function DropdownMenu({
                   ))}
                 </div>
               ) : (
-                // Single promotion layout (Product menu)
                 promo && (
                   <div className="w-[360px]">
                     <Link
@@ -218,10 +196,9 @@ export default function DropdownMenu({
         </>
       )}
 
-      {/* MOBILE LAYOUT */}
+      {/* MOBILE */}
       {isMobile && (
         <div className="flex flex-col gap-6 bg-[#111] text-white rounded-xl p-4 mt-3">
-          {/* Mobile navigation links */}
           {links?.map((column, columnIndex) => (
             <div key={columnIndex}>
               <h3 className="text-[14px] uppercase tracking-wide mb-3 border-b border-gray-700 pb-2 text-gray-300">
@@ -234,21 +211,38 @@ export default function DropdownMenu({
                       href={item.href || "#"}
                       className="hover:text-indigo-400 flex items-start gap-3"
                     >
-                      {item.icon && <span className="text-indigo-400 mt-0.5">{item.icon}</span>}
+                      {item.icon && (
+                        <span className="text-white mt-0.5">{item.icon}</span>
+                      )}
                       <span>
-                        <span className="block font-semibold">{item.label}</span>
+                        <span className="block font-semibold">
+                          {item.label}
+                        </span>
                         {item.desc && (
-                          <span className="text-[13px] text-gray-400">{item.desc}</span>
+                          <span className="text-[13px] text-gray-400">
+                            {item.desc}
+                          </span>
                         )}
                       </span>
                     </Link>
                   </li>
                 ))}
               </ul>
+
+              {/* Mobile See all industries */}
+              {column.title === "Industries" && (
+                <div className="mt-4">
+                  <Link
+                    href="/industries"
+                    className="text-indigo-400 underline hover:text-indigo-300 font-semibold text-[14px]"
+                  >
+                    See all industries
+                  </Link>
+                </div>
+              )}
             </div>
           ))}
 
-          {/* Mobile company menu items */}
           {companyItems && companyItems.length > 0 && !links && (
             <div>
               <h3 className="text-[14px] uppercase tracking-wide mb-3 border-b border-gray-700 pb-2 text-gray-300">
@@ -261,7 +255,9 @@ export default function DropdownMenu({
                       href={item.href || "#"}
                       className="hover:text-indigo-400 flex items-center gap-3"
                     >
-                      {item.icon && <span className="text-indigo-400 mt-0.5">{item.icon}</span>}
+                      {item.icon && (
+                        <span className="text-white mt-0.5">{item.icon}</span>
+                      )}
                       <span className="font-semibold">{item.label}</span>
                     </Link>
                   </li>
@@ -270,7 +266,6 @@ export default function DropdownMenu({
             </div>
           )}
 
-          {/* Mobile promotional content */}
           {promo && Array.isArray(promo) ? (
             <div className="grid gap-4">
               {promo.map((promoItem, promoIndex) => (
@@ -280,10 +275,16 @@ export default function DropdownMenu({
                   className="relative rounded-xl overflow-hidden shadow-md block bg-gray-900"
                 >
                   {promoItem.image && (
-                    <img src={promoItem.image} alt={promoItem.text} className="w-full h-[140px] object-cover" />
+                    <img
+                      src={promoItem.image}
+                      alt={promoItem.text}
+                      className="w-full h-[140px] object-cover"
+                    />
                   )}
                   <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-3">
-                    <p className="text-white font-semibold text-sm">{promoItem.text}</p>
+                    <p className="text-white font-semibold text-sm">
+                      {promoItem.text}
+                    </p>
                   </div>
                 </Link>
               ))}
@@ -295,10 +296,16 @@ export default function DropdownMenu({
                 className="relative rounded-xl overflow-hidden shadow-md block bg-gray-900"
               >
                 {promo.image && (
-                  <img src={promo.image} alt={promo.text} className="w-full h-[160px] object-cover" />
+                  <img
+                    src={promo.image}
+                    alt={promo.text}
+                    className="w-full h-[160px] object-cover"
+                  />
                 )}
                 <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-3">
-                  <p className="text-white font-semibold text-base">{promo.text}</p>
+                  <p className="text-white font-semibold text-base">
+                    {promo.text}
+                  </p>
                   {promo.cta && (
                     <span className="mt-2 inline-block bg-white text-indigo-600 text-xs font-semibold px-3 py-1.5 rounded-full">
                       {promo.cta}

@@ -20,3 +20,13 @@ export const aboutcustomHeadingData = {
   image: "/SecurityComponent/CMSPIC.webp",
 };
 
+// Industries Page
+export const IndustriesData = {
+    title: `Get to know Kontent.ai`,
+  description: `Learn how to generate unparalleled return on your content with Kontent.ai.`,
+
+  inputPlaceholder: "Your business email",
+  checkboxLabel: "I want to receive news and updates from Kontent.ai",
+  buttonText: "See if we’re a fit",
+  image: "/SecurityComponent/CMSPIC.webp",
+};
