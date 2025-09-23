@@ -3,14 +3,14 @@
 import Image from "next/image";
 
 const logos = [
-  { src: "/logos/ignite.png", alt: "Ignite" },
-  { src: "/logos/elanco.png", alt: "Elanco" },
-  { src: "/logos/umc.png", alt: "UMC Utrecht" },
-  { src: "/logos/cancer-council.png", alt: "Cancer Council Australia" },
-  { src: "/logos/ncoa.png", alt: "NCOA" },
-  { src: "/logos/integria.png", alt: "Integria" },
-  { src: "/logos/esmo.png", alt: "ESMO" },
-  { src: "/logos/dkms.png", alt: "DKMS" },
+  { src: "/SolutionPage/healthCare/webmd.webp", alt: "Ignite" },
+  { src: "/SolutionPage/healthCare/elanco-logo.svg", alt: "Elanco" },
+  { src: "/SolutionPage/healthCare/umc.svg", alt: "UMC Utrecht" },
+  { src: "/SolutionPage/healthCare/cancer.svg", alt: "Cancer Council Australia" },
+  { src: "/SolutionPage/healthCare/ncosvg.svg", alt: "NCOA" },
+  { src: "/SolutionPage/healthCare/integria.webp", alt: "Integria" },
+  { src: "/SolutionPage/healthCare/esmo.webp", alt: "ESMO" },
+  { src: "/SolutionPage/healthCare/dkms.svg", alt: "DKMS" },
 ];
 
 export default function TrustedPartners() {

@@ -3,6 +3,7 @@ import ContentChallenges from '@/app/component/Same/ContentChallenge/ContentChal
 import CustomHeading from '@/app/component/Same/CustomHeading/CustomHeading'
 import Hero from '@/app/component/Same/Hero/Hero'
 import ImageRightSection from '@/app/component/Same/ImageRightSection/ImageRightSection'
+import LogoGrid from '@/app/component/Same/LogoGrid/LogoGrid'
 import SolutionCards from '@/app/component/Same/SolutionCards/SolutionCards'
 import TechStackSection from '@/app/component/Same/TechSection/TechSection'
 import Testimonial from '@/app/component/Solution/Manufacturing/Testimonial'
@@ -10,6 +11,7 @@ import SolutionLogos from '@/app/component/Solution/SolutionLogos/Solutionlogos'
 import { extSectionData } from '@/app/data/CustomHeading/CustomHeadingData'
 import { platformHeroData } from '@/app/data/HeroComponentData/HeroComponentData'
 import { WebMD } from '@/app/data/ImageRightSection/imageRightSection'
+import { educationLogos } from '@/app/data/LogoGridData/LogoGridData'
 import certificationsData from '@/app/data/solutionData/certificationsData'
 import contentChallenges from '@/app/data/solutionData/ContentChallenge'
 import { solutionLogos } from '@/app/data/solutionData/logos'
@@ -29,7 +31,7 @@ const Manufacturing = () => {
             <ContentChallenges data={contentChallenges}/>
             <Certifications data={certificationsData}
             heading={{"before":"The best way to work with","highlight":"your content","after":""}} />
-            <SolutionLogos logos={solutionLogos} />
+            <LogoGrid logos={educationLogos} />
             <CustomHeading {...extSectionData}/>
      </>
   )

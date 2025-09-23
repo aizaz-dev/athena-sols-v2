@@ -9,7 +9,7 @@ const testimonials = [
     name: "Karin Broeksma",
     role: "SEO Specialist, Knab",
     companyLogo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Knab_logo.svg/2560px-Knab_logo.svg.png",
+      "/SolutionPage/manufacturing/intralox.webp",
   },
 ];
 

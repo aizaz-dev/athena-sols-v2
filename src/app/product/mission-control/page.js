@@ -7,7 +7,7 @@ import { platformHeroData } from "@/app/data/HeroComponentData/HeroComponentData
 import ImageRightSection from "@/app/component/Same/ImageRightSection/ImageRightSection"
 import { EasilyWork, MointerOperationMC , NeverLoss, Tabs, workflows } from "@/app/data/ImageRightSection/imageRightSection"
 import TestimonialSlider from "@/app/component/Same/TestimonialSlider/TestimonialSlider"
-import testimonials from "@/app/data/Testimonial/Accelerator/testimonials"
+import testimonials, { testimonialsIntegration } from "@/app/data/Testimonial/Accelerator/testimonials"
 export default function MissionController(){
     return(
         <>
@@ -20,7 +20,7 @@ export default function MissionController(){
             <ImageRightSection {...Tabs} />
             <ImageRightSection {...workflows} />
             <ContentProduction />
-            <TestimonialSlider data={testimonials} />
+        <TestimonialSlider data={testimonialsIntegration} />
             <Resources />
         </>
     )

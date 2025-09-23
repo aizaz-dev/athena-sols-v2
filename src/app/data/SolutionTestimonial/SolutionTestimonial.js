@@ -15,6 +15,20 @@ export const testimonialWithImage = [
   },
 ];
 
+export const testimonialWithImageInsurance = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=500&h=500&fit=crop",
+    quote:
+      "With Kontent.ai, the content editing process is now so much faster. We don’t need to consult a giant rulebook to create content—everything is clear, straightforward, and easy to use. This improved usability translates to a much faster content creation process.",
+    name: "Karin Broeksma",
+    role: "SEO Specialist, Knab",
+    companyLogo:
+      "/SolutionPage/insurranceLogo/trust.svg",
+  },
+];
+
+
 // Without image
 export const testimonialNoImage = [
   {

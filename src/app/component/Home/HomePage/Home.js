@@ -5,17 +5,18 @@ import CustomerStories from "../CustomerStories/CustomerStories";
 import DiscoverNext from "../DiscoverNext/DiscoverNext";
 import HeroSection from "../HeroSection/HeroSection";
 import CardInfo from "../Infocard/Cardsinfo";
-import LogoMarquee from "../LogoMarquee/LogoMarque";
 import MissionControl from "../MissionControl/MissionControl";
 import SecuritySection from "../SecurityCards/SecurityCards";
 import CustomHeading from "../../Same/CustomHeading/CustomHeading";
 import { extSectionData } from "@/app/data/CustomHeading/CustomHeadingData";
+import LogoMarquee from "../../Same/LogoMarquee/logoMarquee";
+import { educationLogos } from "@/app/data/LogoGridData/LogoGridData";
 
 function HomePage() {
   return (
     <>
       <HeroSection />
-      <LogoMarquee />
+      <LogoMarquee logos={educationLogos}/>
       <CardInfo />
       <DiscoverNext />
       <AccordionSlider />

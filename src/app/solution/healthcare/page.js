@@ -19,16 +19,16 @@ import {
 import certificationsData from "@/app/data/solutionData/certificationsData";
 import contentChallenges from "@/app/data/solutionData/ContentChallenge";
 import { healthcare } from "@/app/data/techStackSectionData/techStackSectionData";
-import testimonials from "@/app/data/Testimonial/Accelerator/testimonials";
-import { solutionFeatures } from "@/app/data/solutionData/SolutionFeatures";
+import testimonials, { testimonialsHealth } from "@/app/data/Testimonial/Accelerator/testimonials";
+import {solutionHealth } from "@/app/data/solutionData/SolutionFeatures";
 import SolutionLogos from "@/app/component/Solution/SolutionLogos/Solutionlogos";
-import { solutionLogos } from "@/app/data/solutionData/logos";
+import { healthCareLogo } from "@/app/data/solutionData/logos";
 
 const Healthcare = () => {
   return (
     <>
       <Hero data={platformHeroData.find((item) => item.id === "healthcare")} />
-      <SolutionLogos logos={solutionLogos} />
+      <SolutionLogos logos={healthCareLogo} />
       <ImageRightSection {...WebMD} />
       <ContentSlider
         slides={PlatformSlider}
@@ -36,9 +36,9 @@ const Healthcare = () => {
         pageHighlight="faster"
       />
       <TechStackSection data={healthcare} />
-      <SolutionCards features={solutionFeatures} />
+      <SolutionCards features={solutionHealth} />
       <TrustedPartners />
-      <TestimonialSlider data={testimonials} />
+      <TestimonialSlider data={testimonialsHealth} />
       <ContentChallenges data={contentChallenges} />
       <ImageRightSection {...SolutionPageSection} />
       <Certifications

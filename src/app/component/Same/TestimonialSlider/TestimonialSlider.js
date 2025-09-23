@@ -29,29 +29,44 @@ export default function TestimonialSlider({ data }) {
 
         {/* Content */}
         <div className="flex flex-col md:flex-row items-center gap-12 w-full px-6">
+          {/* Person Image */}
           <div className="flex-shrink-0">
             <Image
               src={testimonial.image}
               alt={testimonial.name}
-              width={300}   
+              width={300}
               height={300}
               className="rounded-2xl object-cover"
             />
           </div>
 
+          {/* Text + Info */}
           <div className="flex flex-col max-w-3xl">
-            <p className="text-2xl md:text-3xl ">
-            <span className="text-6xl text-blue-400 ">“</span>{testimonial.text}
+            <p className="text-2xl md:text-3xl">
+              <span className="text-6xl text-blue-400">“</span>
+              {testimonial.text}
             </p>
+
             <div className="mt-8">
               <p className="font-semibold text-xl md:text-2xl">
                 {testimonial.name}
               </p>
-              <p className="text-lg text-gray-400 mt-1">
-                {testimonial.role}, {testimonial.company}
-              </p>
+              <p className="text-lg text-gray-400 mt-1">{testimonial.role}</p>
             </div>
-            <div className="mt-4 text-3xl font-bold">{testimonial.company}</div>
+
+            {/* Company Logo */}
+            {testimonial.companyLogo && (
+              <div className="mt-6">
+                <Image
+                  src={testimonial.companyLogo}
+                  alt={`${testimonial.name} company logo`}
+                  width={120}
+                  height={60}
+                  className="mt-6 object-contain"
+                 
+                />
+              </div>
+            )}
           </div>
         </div>
 

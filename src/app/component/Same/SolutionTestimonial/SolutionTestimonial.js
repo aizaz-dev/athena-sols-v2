@@ -62,7 +62,7 @@ export default function Testimonial({ testimonials }) {
 
             {/* Company Logo (if available) */}
             {t.companyLogo && (
-              <div className="relative w-[120px] h-[40px]">
+              <div className="relative w-[200px] h-[150px]">
                 <img
                   src={t.companyLogo}
                   alt="Company Logo"

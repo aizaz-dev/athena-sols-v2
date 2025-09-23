@@ -10,7 +10,7 @@ import { extSectionData } from "@/app/data/CustomHeading/CustomHeadingData"
 import { platformHeroData } from "@/app/data/HeroComponentData/HeroComponentData"
 import { Explore, Integration } from "@/app/data/ImageRightSection/imageRightSection"
 import { integrations } from "@/app/data/IntegrationSection/cards"
-import testimonials from "@/app/data/Testimonial/Accelerator/testimonials"
+import { testimonialsIntegration } from "@/app/data/Testimonial/Accelerator/testimonials"
 
 const Intrgration = () => {
   return (
@@ -20,7 +20,7 @@ const Intrgration = () => {
         <DataInsightsIntegration />
         <ImageRightSection {...Integration}/>
         <TestimonialHeader />
-        <TestimonialSlider data={testimonials} />
+        <TestimonialSlider data={testimonialsIntegration} />
         <ImageRightSection {...Explore} />
         <Cards {...integrations}/>
         <CustomHeading {...extSectionData}/>

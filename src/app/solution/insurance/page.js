@@ -2,7 +2,6 @@ import CustomHeading from "@/app/component/Same/CustomHeading/CustomHeading";
 import Hero from "@/app/component/Same/Hero/Hero";
 import ImageRightSection from "@/app/component/Same/ImageRightSection/ImageRightSection";
 import TechStackSection from "@/app/component/Same/TechSection/TechSection";
-import TestimonialSlider from "@/app/component/Same/TestimonialSlider/TestimonialSlider";
 import Certifications from "@/app/component/Same/Certifications/Certifications";
 import ContentChallenges from "@/app/component/Same/ContentChallenge/ContentChallenge";
 import SolutionCards from "@/app/component/Same/SolutionCards/SolutionCards";
@@ -13,20 +12,25 @@ import { WebMD } from "@/app/data/ImageRightSection/imageRightSection";
 import certificationsData from "@/app/data/solutionData/certificationsData";
 import contentChallenges from "@/app/data/solutionData/ContentChallenge";
 import { healthcare } from "@/app/data/techStackSectionData/techStackSectionData";
-import testimonials from "@/app/data/Testimonial/Accelerator/testimonials";
 import React from "react";
-import { solutionFeatures } from "@/app/data/solutionData/SolutionFeatures";
-import { insuranceLogos, solutionLogos } from "@/app/data/solutionData/logos";
+import {  solutioninsurance } from "@/app/data/solutionData/SolutionFeatures";
+import { insuranceLogo, insuranceLogos, insuranceLogosData } from "@/app/data/solutionData/logos";
+import Logos from "@/app/component/Solution/Insurrance/Logos";
+import Testimonial from "@/app/component/Same/SolutionTestimonial/SolutionTestimonial";
+import { testimonialWithImage, testimonialWithImageInsurance } from "@/app/data/SolutionTestimonial/SolutionTestimonial";
+import LogoGrid from "@/app/component/Same/LogoGrid/LogoGrid";
+import { educationLogos } from "@/app/data/LogoGridData/LogoGridData";
 
 const insurance = () => {
   return (
     <>
       <Hero data={platformHeroData.find((item) => item.id === "insurance")} />
-      <SolutionLogos logos={solutionLogos} />
+      <SolutionLogos logos={insuranceLogo} />
       <ImageRightSection {...WebMD} />
       <TechStackSection data={healthcare} />
-      <SolutionCards features={solutionFeatures} />
-      <TestimonialSlider data={testimonials} />
+      <SolutionCards features={solutioninsurance} />
+      <Logos data={insuranceLogosData} />
+      <Testimonial testimonials={testimonialWithImageInsurance} />
       <ContentChallenges data={contentChallenges} />
       <Certifications
         heading={{
@@ -36,7 +40,7 @@ const insurance = () => {
         }}
         data={certificationsData}
       />
-      <SolutionLogos logos={insuranceLogos} />
+      <LogoGrid logos={educationLogos} />
       <CustomHeading {...extSectionData} />
     </>
   );

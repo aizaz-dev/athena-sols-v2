@@ -6,7 +6,7 @@ import Hero from '@/app/component/Same/Hero/Hero'
 import TestimonialSlider from '@/app/component/Same/TestimonialSlider/TestimonialSlider'
 import { extSectionData } from '@/app/data/CustomHeading/CustomHeadingData'
 import { platformHeroData } from '@/app/data/HeroComponentData/HeroComponentData'
-import testimonials from '@/app/data/Testimonial/Accelerator/testimonials'
+import { testimonialsIntegration } from '@/app/data/Testimonial/Accelerator/testimonials'
 import React from 'react'
 
 const Accelerator = () => {
@@ -16,7 +16,7 @@ const Accelerator = () => {
       <StrengthenContent />
       <FeatureSection />
       <ResponsibleAI />
-      <TestimonialSlider data={testimonials}/>
+      <TestimonialSlider data={testimonialsIntegration} />
       <CustomHeading   {...extSectionData} />
     </>
   )

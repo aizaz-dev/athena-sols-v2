@@ -12,7 +12,7 @@ import { platformHeroData } from '@/app/data/HeroComponentData/HeroComponentData
 import ImageRightSection from '@/app/component/Same/ImageRightSection/ImageRightSection'
 import { ContentSection } from '@/app/data/ImageRightSection/imageRightSection'
 import TestimonialSlider from '@/app/component/Same/TestimonialSlider/TestimonialSlider'
-import testimonials from '@/app/data/Testimonial/Accelerator/testimonials'
+import testimonials, { testimonialsIntegration } from '@/app/data/Testimonial/Accelerator/testimonials'
 
 const whatsNew = () => {
   return (
@@ -25,7 +25,7 @@ const whatsNew = () => {
         <AccelerateTV />
         <AgenticCms />
         <Updates />
-        <TestimonialSlider data={testimonials} />
+        <TestimonialSlider data={testimonialsIntegration} />
         <CustomHeading {...extSectionData} />
         
         

@@ -40,8 +40,8 @@ const LogoMarquee = ({ logos = [] }) => {
   }, [logos]); // ✅ re-run if logos change
 
   return (
-    <div className="w-full bg-black">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="w-full bg-black py-20">
+      <div className="max-w-7xl mx-auto px-3">
         <div className="relative overflow-hidden">
           <div ref={marqueeRef} className="flex">
             {logos.map((logo) => (
