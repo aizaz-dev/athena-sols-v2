@@ -14,6 +14,7 @@ export const travelLogos = [
 ];
 
 
+
 export const healthcareLogos = [
   "/logo8.png",
   "/logo9.png",

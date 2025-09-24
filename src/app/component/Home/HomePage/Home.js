@@ -10,13 +10,13 @@ import SecuritySection from "../SecurityCards/SecurityCards";
 import CustomHeading from "../../Same/CustomHeading/CustomHeading";
 import { extSectionData } from "@/app/data/CustomHeading/CustomHeadingData";
 import LogoMarquee from "../../Same/LogoMarquee/logoMarquee";
-import { educationLogos } from "@/app/data/LogoGridData/LogoGridData";
+import { homeLogos } from "@/app/data/Home/HomeLogosdata";
 
 function HomePage() {
   return (
     <>
       <HeroSection />
-      <LogoMarquee logos={educationLogos}/>
+      <LogoMarquee logos={homeLogos}/>
       <CardInfo />
       <DiscoverNext />
       <AccordionSlider />
