@@ -61,6 +61,15 @@ export const ContentSection = {
   image: "/product/extsection.webp",
   reverse:true
 }
+export const ContentSection2 = {
+    title: "Find content faster with the",
+  highlight: "smarter search experience",
+  description:
+    "Search and discovery in your CMS just got smarter! Search now understands the context of your query, so you can find exactly what you need. Navigate through your content repository with speed and ease with this new update.  ",
+  image: "/product/extsection.webp",
+  buttonText: "Learn More",
+  reverse:true
+}
 
 export const shapeTheFuture  = {
     title: "Shape the future of ",
@@ -128,4 +137,54 @@ The Director of IT Applications at the company said, “Kontent.ai’s impact ha
   buttonText: "See if you're fit",
   reverse:true
   
+};
+
+
+
+// Genetic_CMS
+export const Genetic1 = {
+  title: "A 70%",
+  highlight: "efficiency gain",
+  description:
+  `With Kontent.ai, a medical technology company has reduced the time it takes to create a new page by 80%–from 30 hours to just 4-6 hours. Increased productivity has led to a 70% efficiency gain.
+
+The Director of IT Applications at the company said, “Kontent.ai’s impact has been nothing short of transformative.”`,
+  image: "/product/extsection.webp",
+ 
+};
+
+
+export const Genetic2 = {
+  title: "A 70%",
+  highlight: "efficiency gain",
+  description:
+  `With Kontent.ai, a medical technology company has reduced the time it takes to create a new page by 80%–from 30 hours to just 4-6 hours. Increased productivity has led to a 70% efficiency gain.
+
+The Director of IT Applications at the company said, “Kontent.ai’s impact has been nothing short of transformative.”`,
+  image: "/product/extsection.webp",
+  buttonText: "See if you're fit",
+  reverse: true
+};
+
+
+export const Genetic3 = {
+  title: "A 70%",
+  highlight: "efficiency gain",
+  description:
+  `With Kontent.ai, a medical technology company has reduced the time it takes to create a new page by 80%–from 30 hours to just 4-6 hours. Increased productivity has led to a 70% efficiency gain.
+
+The Director of IT Applications at the company said, “Kontent.ai’s impact has been nothing short of transformative.”`,
+  image: "/product/extsection.webp",
+ 
+};
+
+export const Genetic4 = {
+  title: "A 70%",
+  highlight: "efficiency gain",
+  description:
+  `With Kontent.ai, a medical technology company has reduced the time it takes to create a new page by 80%–from 30 hours to just 4-6 hours. Increased productivity has led to a 70% efficiency gain.
+
+The Director of IT Applications at the company said, “Kontent.ai’s impact has been nothing short of transformative.”`,
+  image: "/product/extsection.webp",
+ reverse: false
 };

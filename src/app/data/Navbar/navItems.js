@@ -21,7 +21,7 @@ const productMenu = {
       items: [
         { label: "The platform", href: "/product/platform", icon: <FaBox /> },
         { label: "Mission Control", href: "/product/mission-control", icon: <FaChartBar /> },
-        { label: "AI accelerators", href: "/product/ai-accelerators", icon: <FaRobot /> },
+        { label: "Genetic CMS", href: "/product/genetic-cms", icon: <FaRobot /> },
         { label: "Features", href: "/product/features", icon: <FaStar /> },
         { label: "What’s new", href: "/product/whats-new", icon: <FaGift /> },
         { label: "Innovation Lab", href: "/product/innovation", icon: <FaFlask /> },

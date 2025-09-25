@@ -2,20 +2,20 @@
 
 import Image from "next/image";
 
-export default function DataInsights() {
+export default function CardData() {
   const items = [
     {
-      image: "/Product/MissionController/Graph.svg",
+      image: "/Product/accelerators/Check.svg",
       title: "Analyze everything from one home base",
       desc: "Get insight into everything that’s happening with your teams and content in one place. Stay in the loop about the status and pace of content production with easy-to-analyze widgets, filters, and time frames.",
     },
     {
-      image: "/Product/MissionController/Workflow.svg",
+      image: "/Product/accelerators/Model.svg",
       title: "Take action based on data insights",
       desc: "Turn data signals and patterns into next steps. By measuring and comparing key markers of efficiency, spot frustrating bottlenecks that need your attention and make meaningful changes to how your teams work.",
     },
     {
-      image: "/Product/MissionController/Diamond.svg",
+      image: "/Product/accelerators/Cog.svg",
       title: "Allocate resources more strategically",
       desc: "Understand how much time it takes to create, review, and publish specific types of content. By weighing the investment against anticipated returns, it’s much easier to avoid time sinks and allocate resources to high-impact activities.",
     },
@@ -25,7 +25,7 @@ export default function DataInsights() {
     <section className="bg-black text-white py-20 px-6 sm:px-12">
       {/* Heading */}
       <div className="max-w-4xl mb-12 ml-6 sm:ml-20 lg:ml-40">
-        <h2 className="text-3xl md:text-4xl md:pl-20 font-bold leading-tight">
+        <h2 className="text-3xl md:text-4xl font-bold md:pl-20 leading-tight">
           Actionable data,{" "}
           <span className="text-indigo-400">right in your CMS</span>
         </h2>

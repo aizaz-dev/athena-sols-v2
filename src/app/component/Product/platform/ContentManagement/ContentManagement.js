@@ -1,79 +1,76 @@
-// components/ContentManagement.js
+"use client";
+import Image from "next/image";
 import React from "react";
-import { FiTarget, FiEdit3, FiShuffle } from "react-icons/fi";
+
+const contentManagementData = {
+  heading: "Complex content management",
+  highlight: "made simple",
+  description:
+    "Your CMS shouldn’t slow you down. Explore key capabilities that help make content management in the Kontent.ai platform speedy and efficient.",
+  boxes: [
+    {
+      imgUrl: "/Product/Platform/target.svg",
+      title: "The repository with everything you need",
+      description:
+        "By removing the clutter often associated with other CMSs, Kontent.ai lets your team focus on your content strategy, delivering the best message across your digital channels.",
+      buttonText: "Explore content hubs"
+    },
+    {
+      imgUrl: "/Product/Platform/Pencil.svg",
+      title: "Content operations, accelerated with AI",
+      description:
+        "AI is one of the greatest tools teams can leverage. In Kontent.ai, AI assistance is available right as you work, so you can brainstorm, create, and optimize content without having to leave the platform.",
+      buttonText: "Explore AI"
+    },
+    {
+      imgUrl: "/Product/Platform/Workflow.svg",
+      title: "Workflows that truly keep things moving",
+      description:
+        "Workflows support transparent, productive teamwork. Improve content quality and velocity with workflows customized to your organization, approval processes, and compliance requirements.",
+      buttonText: "Explore workflows"
+    }
+  ]
+};
 
 const ContentManagement = () => {
+  const { heading, highlight, description, boxes } = contentManagementData;
+
   return (
     <section className="bg-black text-white py-16 px-6">
       {/* Top Heading Section */}
-      <div className=" max-w-6xl mx-auto mb-16">
+      <div className="max-w-6xl mx-auto mb-16">
         <h2 className="text-3xl md:text-4xl font-bold">
-          Complex content management{" "}
-          <span className="text-indigo-500">made simple</span>
+          {heading} <span className="text-indigo-500">{highlight}</span>
         </h2>
-        <p className="mt-4 text-gray-300 text-lg max-w-3xl font-semibold">
-          Your CMS shouldn’t slow you down. Explore key capabilities that help
-          make content management in the Kontent.ai platform speedy and
-          efficient.
-        </p>
+        <p className="mt-4 text-gray-300 text-lg max-w-3xl font-semibold">{description}</p>
       </div>
 
       {/* Boxes Section */}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-        {/* Box 1 */}
-        <div className="bg-neutral-900 rounded-2xl p-8 flex flex-col justify-between shadow-lg">
-          <div>
-            <FiTarget className="text-2xl text-white" />
-            <h3 className="text-xl font-semibold mt-5">
-              The repository with everything you need
-            </h3>
-            <p className="mt-4 text-gray-400 leading-relaxed">
-              By removing the clutter often associated with other CMSs,
-              Kontent.ai lets your team focus on your content strategy,
-              delivering the best message across your digital channels.
-            </p>
-          </div>
-          <button className="mt-6 w-fit px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition">
-            Explore content hubs
-          </button>
-        </div>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        {boxes.map((box, index) => (
+          <div
+            key={index}
+            className="bg-neutral-900 rounded-2xl p-6 flex flex-col justify-between shadow-lg min-h-[350px]"
+          >
+            {/* Image on top row, left-aligned */}
+            <div className="flex mb-4">
+              <Image src={box.imgUrl} alt={box.title} height={50} width={50} className="w-8 h-8 object-contain" />
+            </div>
 
-        {/* Box 2 */}
-        <div className="bg-neutral-900 rounded-2xl p-8 flex flex-col justify-between shadow-lg">
-          <div>
-            <FiEdit3 className="text-2xl  text-white" />
-            <h3 className="text-xl font-semibold mt-5">
-              Content operations, accelerated with AI
-            </h3>
-            <p className="mt-4 text-gray-400 leading-relaxed">
-              AI is one of the greatest tools teams can leverage. In
-              Kontent.ai, AI assistance is available right as you work, so you
-              can brainstorm, create, and optimize content without having to
-              leave the platform.
-            </p>
-          </div>
-          <button className="mt-6 w-fit px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition">
-            Explore AI
-          </button>
-        </div>
+            {/* Title, left-aligned */}
+            <h3 className="text-2xl md:text-3xl font-semibold">{box.title}</h3>
 
-        {/* Box 3 */}
-        <div className="bg-neutral-900 rounded-2xl p-8 flex flex-col justify-between shadow-lg">
-          <div>
-            <FiShuffle className="text-2xl text-white" />
-            <h3 className="text-xl font-semibold mt-5">
-              Workflows that truly keep things moving
-            </h3>
-            <p className="mt-4 text-gray-400 leading-relaxed">
-              Workflows support transparent, productive teamwork. Improve
-              content quality and velocity with workflows customized to your
-              organization, approval processes, and compliance requirements.
-            </p>
+            {/* Description, left-aligned */}
+            <p className="mt-4 text-white text-lg leading-relaxed">{box.description}</p>
+
+            {/* Button, left-aligned */}
+            <div className="mt-6">
+              <button className="px-6 py-3 rounded-full border border-white text-white hover:bg-white hover:text-black transition">
+                {box.buttonText}
+              </button>
+            </div>
           </div>
-          <button className="mt-6 w-fit px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition">
-            Explore workflows
-          </button>
-        </div>
+        ))}
       </div>
     </section>
   );
