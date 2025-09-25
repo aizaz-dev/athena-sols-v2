@@ -7,12 +7,14 @@ import { platformHeroData } from "@/app/data/HeroComponentData/HeroComponentData
 import ImageRightSection from "@/app/component/Same/ImageRightSection/ImageRightSection"
 import { EasilyWork, MointerOperationMC , NeverLoss, Tabs, workflows } from "@/app/data/ImageRightSection/imageRightSection"
 import TestimonialSlider from "@/app/component/Same/TestimonialSlider/TestimonialSlider"
-import testimonials, { testimonialsIntegration } from "@/app/data/Testimonial/Accelerator/testimonials"
+import { testimonialsIntegration } from "@/app/data/Testimonial/Accelerator/testimonials"
+import VideoSection from "@/app/component/Same/Video/VideoSection"
+import {  MissionControlvideo } from "@/app/data/VideoSectionData/videoSection"
 export default function MissionController(){
     return(
         <>
             <Hero data={platformHeroData.find(item => item.id === "missionControl") } />
-            <MSvideo />
+            <VideoSection {...MissionControlvideo} />
             <DataInsights />
             <ImageRightSection {...MointerOperationMC}/>
             <ImageRightSection {...NeverLoss} />

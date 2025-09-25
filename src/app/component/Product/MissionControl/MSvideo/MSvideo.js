@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Play } from "lucide-react";
 
-const MSvideo = () => {
+const MSvideo = ({ title, highlight, paragraphs, videoId }) => {
   const [play, setPlay] = useState(false);
 
   return (
@@ -10,22 +10,20 @@ const MSvideo = () => {
       {/* Left Side - Text */}
       <div className="w-full max-w-2xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Control and efficiency:{" "}
+          {title}{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
-            The content-first advantage
+            {highlight}
           </span>
         </h2>
-        <p className="text-lg text-gray-200 font-semibold mb-6">
-          A content-first approach prioritizes content and its message before
-          design, layout, and development. This allows you to create value in
-          more than one context or on more than one channel, compared to
-          single-purpose content that’s tied to a specific layout or webpage.
-        </p>
-        <p className="text-lg text-gray-200 font-semibold mb-6">
-          In Kontent.ai, reusable modular content blocks help you make the most
-          of your content, while keeping it consistent and accurate wherever
-          it’s published.
-        </p>
+
+        {paragraphs.map((para, index) => (
+          <p
+            key={index}
+            className="text-lg text-gray-200 font-semibold mb-6"
+          >
+            {para}
+          </p>
+        ))}
       </div>
 
       {/* Right Side - Video Preview */}
@@ -34,7 +32,7 @@ const MSvideo = () => {
           <>
             {/* Thumbnail from YouTube */}
             <img
-              src="https://img.youtube.com/vi/TBOufnd_huU/maxresdefault.jpg"
+              src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
               alt="Video Thumbnail"
               className="w-full h-full object-cover rounded-xl"
             />
@@ -52,7 +50,7 @@ const MSvideo = () => {
         ) : (
           <iframe
             className="w-full h-64 md:h-96 rounded-xl"
-            src="https://www.youtube.com/embed/TBOufnd_huU?autoplay=1&mute=1"
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

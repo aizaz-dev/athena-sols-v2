@@ -10,6 +10,16 @@ export const ControlEfficiencyVideo = {
   reverse: false,
 };
 
+export const MissionControlvideo = {
+  title: "Mission Control is now your",
+  highlight: "new home base ",
+  description: [
+    "Get insight into everything that’s happening with your teams and content, right when you enter the platform. With greater visibility into the progress and efficiency of content production, it’s easier to spot bottlenecks and keep everything running smoothly. Take a quick video tour.",
+  ],
+  thumbnail: "https://img.youtube.com/vi/TBOufnd_huU/maxresdefault.jpg",
+  videoUrl: "https://www.youtube.com/embed/TBOufnd_huU",
+};
+
 export const HealthcareVideoGray = {
   title: "Control and efficiency:",
   highlight: "",
@@ -21,3 +31,5 @@ export const HealthcareVideoGray = {
   videoUrl: "https://www.youtube.com/embed/TBOufnd_huU",
   reverse: false,
 };
+
+
