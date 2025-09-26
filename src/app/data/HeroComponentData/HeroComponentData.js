@@ -10,7 +10,7 @@ export const platformHeroData = [
       { text: "Start free trial", link: "#" },
     ],
   },
-   {
+  {
     id: "whatsNew",
     heading: "What’s",
     highlight: "new",
@@ -32,7 +32,7 @@ export const platformHeroData = [
       { text: "Start free Trial", link: "/" },
     ],
   },
-   {
+  {
     id: "accelerateHero",
     heading: "Explore",
     highlight: "ai Accelerators ",
@@ -43,7 +43,7 @@ export const platformHeroData = [
       { text: "Start free Trial", link: "/" },
     ],
   },
-   {
+  {
     id: "Features",
     heading: "Explore",
     highlight: "Features",
@@ -54,7 +54,7 @@ export const platformHeroData = [
       { text: "Start free Trial", link: "/" },
     ],
   },
-   {
+  {
     id: "Innvotion",
     heading: "Explore the",
     highlight: "Innovation Lab",
@@ -65,7 +65,7 @@ export const platformHeroData = [
       { text: "Start free Trial", link: "/" },
     ],
   },
-   {
+  {
     id: "Integrate",
     heading: "Integrate with",
     highlight: "confidence and speed",
@@ -76,11 +76,12 @@ export const platformHeroData = [
       { text: "Start free Trial", link: "/" },
     ],
   },
-   {
+  {
     id: "forDeveloper",
     heading: "Deliver experiences",
     highlight: "your way",
-    description:"A cloud-native headless CMS that lets you build any kind of digital experience, using the technologies and frameworks of your choice. With Kontent.ai, marketing teams can work independently on content, giving developers the time and freedom to focus on engineering work.",
+    description:
+      "A cloud-native headless CMS that lets you build any kind of digital experience, using the technologies and frameworks of your choice. With Kontent.ai, marketing teams can work independently on content, giving developers the time and freedom to focus on engineering work.",
     buttons: [
       { text: "See if we’re a fit", link: "/" },
       { text: "Start free Trial", link: "/" },
@@ -90,7 +91,8 @@ export const platformHeroData = [
     id: "healthcare",
     heading: "Manage",
     highlight: "healthcare content",
-    description:"Unify your healthcare content ecosystem with a single, HIPAA-compliant CMS platform. Ensure accuracy, maintain compliance, and drive efficient content operations with Kontent.ai.",
+    description:
+      "Unify your healthcare content ecosystem with a single, HIPAA-compliant CMS platform. Ensure accuracy, maintain compliance, and drive efficient content operations with Kontent.ai.",
     buttons: [
       { text: "See if we’re a fit", link: "/" },
       { text: "Start free Trial", link: "/" },
@@ -100,68 +102,83 @@ export const platformHeroData = [
     id: "insurance",
     heading: "Manage",
     highlight: "insurance content",
-    description:"Create, customize, and reuse content, speeding up time to value while meeting compliance requirements. Future-proof your content strategy with a CMS that scales with you.",
+    description:
+      "Create, customize, and reuse content, speeding up time to value while meeting compliance requirements. Future-proof your content strategy with a CMS that scales with you.",
     buttons: [
       { text: "See if we’re a fit", link: "/" },
       { text: "Start free Trial", link: "/" },
     ],
   },
-   {
+  {
     id: "banking",
     heading: "Manage",
     highlight: "financial content",
-    description:"Provide accurate information and reliable, secure digital services on multiple channels with a CMS designed to support the requirements of highly regulated industries.",
+    description:
+      "Provide accurate information and reliable, secure digital services on multiple channels with a CMS designed to support the requirements of highly regulated industries.",
     buttons: [
       { text: "See if we’re a fit", link: "/" },
       { text: "Start free Trial", link: "/" },
     ],
   },
-   {
+  {
     id: "manufacturing",
     heading: "Manage",
     highlight: "manufacturing content",
-    description:"Take control of your content value chain and get to market faster. Multi-channel publishing, enhanced collaboration, governance, and more: all in a single CMS.",
+    description:
+      "Take control of your content value chain and get to market faster. Multi-channel publishing, enhanced collaboration, governance, and more: all in a single CMS.",
     buttons: [
       { text: "See if we’re a fit", link: "/" },
       { text: "Start free Trial", link: "/" },
     ],
   },
 
-    {
+  {
     id: "education",
     heading: "Manage",
     highlight: "education content",
-    description:"Deliver website and portal experiences that make the grade. Govern all content production in a single CMS to ensure information at every touch point is accurate and trustworthy.",
+    description:
+      "Deliver website and portal experiences that make the grade. Govern all content production in a single CMS to ensure information at every touch point is accurate and trustworthy.",
     buttons: [
       { text: "See if we’re a fit", link: "/" },
       { text: "Start free Trial", link: "/" },
     ],
   },
-    {
+  {
     id: "travel",
     heading: "Manage",
     highlight: "tourism content",
-    description:"Power first-class travel experiences with fresh, engaging content. Make quick edits, push alerts, and keep customers informed—all without developer involvement.",
+    description:
+      "Power first-class travel experiences with fresh, engaging content. Make quick edits, push alerts, and keep customers informed—all without developer involvement.",
     buttons: [
       { text: "See if we’re a fit", link: "/" },
       { text: "Start free Trial", link: "/" },
     ],
   },
-    {
+  {
     id: "about",
     heading: "Get to know",
     highlight: "Kontent.ai",
-    description:"Kontent.ai is a global company with an award-winning content management system (CMS), benchmark-crushing customer support and services, and more than 140 employees worldwide.",
-    buttons: [
-      { text: "Join Us", link: "/" },
-    ],
+    description:
+      "Kontent.ai is a global company with an award-winning content management system (CMS), benchmark-crushing customer support and services, and more than 140 employees worldwide.",
+    buttons: [{ text: "Join Us", link: "/" }],
   },
-     {
+  {
     id: "industries",
     heading: "Top",
     highlight: "industries",
-    description:"Kontent.ai powers consistent, relevant, and engaging experiences for customers across all types of industries. See how a headless CMS can support your teams to create high quality content for your customers on all channels and devices.",
+    description:
+      "Kontent.ai powers consistent, relevant, and engaging experiences for customers across all types of industries. See how a headless CMS can support your teams to create high quality content for your customers on all channels and devices.",
   },
-  
-  
+
+  {
+    id: "retail",
+    heading: "Manage",
+    highlight: "retail content",
+    description:
+      "Create memorable shopping experiences with engaging, consistent content across all devices and channels with a CMS built for modern retail business.",
+    buttons: [
+      { text: "Schedule a demo", link: "/" },
+      { text: "Get the white paper", link: "/" },
+    ],
+  },
 ];

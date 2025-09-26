@@ -25,7 +25,7 @@ const industries = [
     description:
       "Put patients first with content that is accurate and compassionate, powered by a single content hub.",
     image: "/industries/healthcare.jpg",
-    link: "/solution/healthcare",
+    link: "/industries/retail",
   },
   {
     title: "Education",

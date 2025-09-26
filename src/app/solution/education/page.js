@@ -13,10 +13,10 @@ import { platformHeroData } from "@/app/data/HeroComponentData/HeroComponentData
 import { WebMD } from "@/app/data/ImageRightSection/imageRightSection"
 import { educationLogos } from "@/app/data/LogoGridData/LogoGridData"
 import certificationsData from "@/app/data/solutionData/certificationsData"
-import contentChallenges from "@/app/data/solutionData/ContentChallenge"
 import { solutionBanking } from "@/app/data/solutionData/SolutionFeatures"
 import { healthcare } from "@/app/data/techStackSectionData/techStackSectionData"
 import { logoData } from "@/app/data/LogoData/logoData"
+import { contentChallenges } from "@/app/data/solutionData/ContentChallenge"
 
 const Education =() => {    
     return <>

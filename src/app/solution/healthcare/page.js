@@ -7,7 +7,6 @@ import TestimonialSlider from "@/app/component/Same/TestimonialSlider/Testimonia
 import Certifications from "@/app/component/Same/Certifications/Certifications";
 import ContentChallenges from "@/app/component/Same/ContentChallenge/ContentChallenge";
 import SolutionCards from "@/app/component/Same/SolutionCards/SolutionCards";
-import Solutionlogos from "@/app/component/Solution/SolutionLogos/Solutionlogos";
 import TrustedPartners from "@/app/component/Solution/TrustedPartners/TrustedPartners";
 import { PlatformSlider } from "@/app/data/ContentSlider/ContentSliderData";
 import { extSectionData } from "@/app/data/CustomHeading/CustomHeadingData";
@@ -17,12 +16,12 @@ import {
   WebMD,
 } from "@/app/data/ImageRightSection/imageRightSection";
 import certificationsData from "@/app/data/solutionData/certificationsData";
-import contentChallenges from "@/app/data/solutionData/ContentChallenge";
 import { healthcare } from "@/app/data/techStackSectionData/techStackSectionData";
-import testimonials, { testimonialsHealth } from "@/app/data/Testimonial/Accelerator/testimonials";
+import  { testimonialsHealth } from "@/app/data/Testimonial/Accelerator/testimonials";
 import {solutionHealth } from "@/app/data/solutionData/SolutionFeatures";
 import SolutionLogos from "@/app/component/Solution/SolutionLogos/Solutionlogos";
 import { healthCareLogo } from "@/app/data/solutionData/logos";
+import { contentChallenges } from "@/app/data/solutionData/ContentChallenge";
 
 const Healthcare = () => {
   return (

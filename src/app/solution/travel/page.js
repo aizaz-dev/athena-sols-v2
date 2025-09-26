@@ -12,7 +12,7 @@ import { platformHeroData } from '@/app/data/HeroComponentData/HeroComponentData
 import { WebMD } from '@/app/data/ImageRightSection/imageRightSection'
 import { educationLogos, travelLogos } from '@/app/data/LogoGridData/LogoGridData'
 import certificationsData  from '@/app/data/solutionData/certificationsData'
-import contentChallenges from '@/app/data/solutionData/ContentChallenge'
+import { contentChallenges } from '@/app/data/solutionData/ContentChallenge'
 import { solutionPage } from '@/app/data/solutionData/SolutionFeatures'
 import { testimonialNoImage } from '@/app/data/SolutionTestimonial/SolutionTestimonial'
 import { healthcare } from '@/app/data/techStackSectionData/techStackSectionData'
@@ -27,7 +27,7 @@ const Travel = () => {
         <TechStackSection data={healthcare} />
         <SolutionCards features={solutionPage} />
         <Testimonial testimonials={testimonialNoImage} />
-        <ContentChallenges data={contentChallenges } />
+        <ContentChallenges data={contentChallenges} />
         <Certifications
          heading={{
           before: "The best way to work with",

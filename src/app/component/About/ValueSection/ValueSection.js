@@ -2,7 +2,7 @@
 
 export default function ValuesSection() {
   return (
-    <section className="bg-black text-white py-16 px-6 md:px-12 lg:px-24">
+    <section className="bg-black text-white py-16 px-6 md:px-12 lg:px-74">
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-bold mb-6">
         The values we live by

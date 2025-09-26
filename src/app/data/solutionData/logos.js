@@ -53,3 +53,12 @@ export const insuranceLogosData = {
   ],
 };
 
+
+
+export const retailLogos = [
+  "/Industry/Retail/hartlauer-logo.svg",
+  "/Industry/Retail/cadbury-logo.svg",
+  "/Industry/Retail/rewe-group-logo.svg",
+  "/Industry/Retail/healthy-life-logo.svg",
+  "/Industry/Retail/gassan-logo.svg",
+];

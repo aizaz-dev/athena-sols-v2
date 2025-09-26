@@ -3,21 +3,24 @@
 import Image from "next/image";
 
 const investors = [
-  { name: "Investor 1", logo: "/images/logo1.png" },
+  { name: "Investor 1", logo: "/About/expedition.webp" },
 ];
 
 export default function Investors() {
   return (
-    <section className="bg-black text-white px-6 md:px-12 lg:px-24 py-20">
-      {/* Heading (between left and center) */}
-      <h2 className="text-4xl md:text-5xl font-bold mb-12 w-fit mx-auto md:ml-[3%]">
+    <section className="bg-black text-white px-6 md:px-12 lg:px-24 pt-20">
+      {/* Heading (slightly left shifted) */}
+      <h2 className="text-4xl md:text-5xl font-bold mb-4 w-fit ml-[20%]">
         Our investors
       </h2>
 
       {/* Logos */}
-      <div className="flex flex-wrap justify-center items-center gap-16">
+      <div className="flex flex-wrap justify-center items-center gap-6">
         {investors.map((item, index) => (
-          <div key={index} className="relative w-40 h-20 md:w-56 md:h-28">
+          <div
+            key={index}
+            className="relative w-72 h-40 md:w-136 md:h-102"
+          >
             <Image
               src={item.logo}
               alt={item.name}
