@@ -14,6 +14,7 @@ import  { testimonialsIntegration, testimonialsWhatsNew } from '@/app/data/Testi
 import { whatstvData } from '@/app/data/WhatsTvData/WhatsTv'
 import { AgenticCmsData } from '@/app/data/AgenticCmsData/AgenticCmsData'
 import AgenticCms from '@/app/component/Same/AgenticCMS/AgenticCMS'
+import ResourcesWhat from '@/app/component/Product/Whatsnew/Resources/Resources'
 
 const whatsNew = () => {
   return (
@@ -25,6 +26,7 @@ const whatsNew = () => {
       pageHighlight="faster" />
         <ImageRightSection {...ContentSection2} />
         <AgenticCms data={AgenticCmsData} />
+        <ResourcesWhat />
         <AgenticCms data={AgenticCmsData} />
         <TestimonialSlider data={testimonialsWhatsNew} />
         <CustomHeading {...extSectionData} />

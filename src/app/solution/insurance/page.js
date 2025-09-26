@@ -16,7 +16,7 @@ import React from "react";
 import {  solutioninsurance } from "@/app/data/solutionData/SolutionFeatures";
 import { insuranceLogo, insuranceLogos, insuranceLogosData } from "@/app/data/solutionData/logos";
 import Logos from "@/app/component/Solution/Insurrance/Logos";
-import Testimonial from "@/app/component/Same/SolutionTestimonial/SolutionTestimonial";
+import Testimonial from "@/app/component/Same/Testimonial/SolutionTestimonial";
 import { testimonialWithImage, testimonialWithImageInsurance } from "@/app/data/SolutionTestimonial/SolutionTestimonial";
 import LogoGrid from "@/app/component/Same/LogoGrid/LogoGrid";
 import { educationLogos } from "@/app/data/LogoGridData/LogoGridData";

@@ -7,7 +7,7 @@ import ImageRightSection from "@/app/component/Same/ImageRightSection/ImageRight
 import { EasilyWork, MointerOperationMC , NeverLoss, Tabs, workflows } from "@/app/data/ImageRightSection/imageRightSection"
 import VideoSection from "@/app/component/Same/Video/VideoSection"
 import {  MissionControlvideo } from "@/app/data/VideoSectionData/videoSection"
-import Testimonial from "@/app/component/Same/SolutionTestimonial/SolutionTestimonial"
+import Testimonial from "@/app/component/Same/Testimonial/SolutionTestimonial"
 import { testimonailMS } from "@/app/data/SolutionTestimonial/SolutionTestimonial"
 export default function MissionController(){
     return(
