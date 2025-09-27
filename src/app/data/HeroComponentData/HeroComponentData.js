@@ -181,4 +181,16 @@ export const platformHeroData = [
       { text: "Get the white paper", link: "/" },
     ],
   },
+   {
+    id: "government",
+    heading: "Manage",
+    highlight: "government content",
+    description:
+      "Deliver timely and consistent information while ensuring compliance with legal and regulatory standards, managing all content initiatives in a tightly governed CMS.",
+    buttons: [
+      { text: "See if we're fit", link: "/" },
+      { text: "Get the guide", link: "/" },
+    ],
+  },
 ];
+

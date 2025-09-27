@@ -62,3 +62,15 @@ export const retailLogos = [
   "/Industry/Retail/healthy-life-logo.svg",
   "/Industry/Retail/gassan-logo.svg",
 ];
+
+
+
+// Government Page
+
+export const governLogos = [
+  "/Industry/Retail/hartlauer-logo.svg",
+  "/Industry/Retail/cadbury-logo.svg",
+  "/Industry/Retail/rewe-group-logo.svg",
+  "/Industry/Retail/healthy-life-logo.svg",
+  "/Industry/Retail/gassan-logo.svg",
+];

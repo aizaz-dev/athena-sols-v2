@@ -63,3 +63,20 @@ export const RetailTech = {
   paragraph:
     "Clean, structured content and an intuitive authoring experience lets marketers own the content while you focus on delivering amazing digital experiences.",
 };
+
+
+
+// Governemt Page
+
+
+export const GovernmentText = {
+  heading: (
+    <>
+     Provide consistent and compliant content{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5F4BFF] to-[#5F4BFF]">
+       across channels
+      </span>
+    </>
+  ),
+  paragraph:
+    "With advanced content governance, Kontent.ai helps government organizations ensure their content is consistent, accurate, and trustworthy, meeting the public’s needs and regulatory standards. Provide teams with seamless authoring experience, secure asset management, and multichannel publishing—all within a single CMS."};

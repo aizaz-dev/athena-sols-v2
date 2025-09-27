@@ -39,7 +39,7 @@ const industries = [
     description:
       "Take control of your content supply chain and ensure the information you deliver is accurate and up-to-date.",
     image: "/industries/manufacturing.jpg",
-    link: "/solution/healthcare",
+    link: "/industries/government",
   },
   {
     title: "Travel and Tourism",
